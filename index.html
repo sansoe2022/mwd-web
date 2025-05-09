@@ -14,10 +14,62 @@
         /* Custom Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5; /* Light background for contrast */
         }
         
+        .navbar {
+            background-color: transparent;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .navbar .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #3366ff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .navbar .navbar-brand .nav-icon {
+            font-size: 1.8rem;
+            color: #3366ff;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: #3366ff;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .navbar-nav .nav-link:hover,
+        .navbar .navbar-nav .nav-link.active {
+            color: #1a44cc; /* Darker shade for hover and active */
+        }
+
+        .navbar .navbar-nav .nav-link:first-child {
+            margin-left: 0;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-light .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(51, 102, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
         .hero-section {
-            /* Removed background gradient */
             color: white;
             padding: 100px 0;
             text-align: center;
@@ -25,7 +77,7 @@
         
         .features {
             padding: 80px 0;
-            background-color: #e6ecff;
+            background-color: #f8f9fa;
         }
         
         .feature-box {
@@ -43,7 +95,7 @@
         .feature-icon {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            color: #6a11cb;
+            color: #3366ff;
         }
         
         .download-btn {
@@ -69,27 +121,6 @@
             min-height: calc(100vh - 350px);
         }
 
-        /* Navbar link color to match address bar */
-        .navbar-light .navbar-nav .nav-link,
-        .navbar-light .navbar-brand {
-            color: #3366ff;
-        }
-
-        .navbar-light .navbar-nav .nav-link:hover,
-        .navbar-light .navbar-brand:hover {
-            color: #4a0e8f; /* Slightly darker shade for hover effect */
-        }
-
-        .navbar-light .navbar-nav .nav-link.active {
-            color: #3366ff;
-            font-weight: bold;
-        }
-
-        /* Ensure navbar toggler icon is visible in light mode */
-        .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(51, 102, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
         /* Hero section app icon styling */
         .app-icon {
             font-size: 3rem;
@@ -99,14 +130,16 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html">MWD Zay</a>
+            <a class="navbar-brand" href="index.html">
+                <i class="fab fa-app-store-ios nav-icon"></i> MWD Zay
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="#" id="nav-home">Home</a>
                     </li>
@@ -134,12 +167,12 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="mb-4">
-                                <i class="fab fa-app-store-ios app-icon" style="color: white;"></i> <!-- Placeholder icon -->
-                                <h2 class="display-6 mb-0" style="color: #3366ff;">MWD Zay</h2>
+                                <i class="fab fa-app-store-ios app-icon" style="color: #3366ff;"></i>
+                                <h2 class="display-6 mb-0" style="color: black;">MWD Zay</h2>
                             </div>
-                            <p class="lead mb-5" style="color: #3366ff;">A powerful app designed to enhance your productivity with advanced features and a user-friendly interface.</p>
+                            <p class="lead mb-5" style="color: black;">A powerful app designed to enhance your productivity with advanced features and a user-friendly interface.</p>
                             <div>
-                                <a href="https://play.google.com/store/apps/details?id=com.sksdev.mwdcalculator" class="btn btn-primary download-btn">
+                                <a href="https://play.google.com/store/apps/details?id=com.sksdev.mwdcalculator" class="btn btn-dark download-btn">
                                     <i class="fab fa-google-play me-2"></i> Get it on Google Play
                                 </a>
                             </div>
@@ -246,7 +279,7 @@
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JavaScript for Navigation and Fetching Content -->
+    <!-- Custom JavaScript for Navigation, Fetching Content, and Scroll Effect -->
     <script>
         // Navigation functions
         function showHome() {
@@ -354,6 +387,16 @@
                 .catch(error => console.error('Error fetching policy:', error));
         }
 
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
         // Event listeners with error handling
         document.addEventListener('DOMContentLoaded', () => {
             const navHome = document.getElementById('nav-home');
@@ -367,13 +410,6 @@
                 navHome.addEventListener('click', (e) => {
                     e.preventDefault();
                     showHome();
-                    const navbarCollapse = document.getElementById('navbarNav');
-                    if (navbarCollapse) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-                        bsCollapse.hide();
-                    } else {
-                        console.error("navbarNav not found");
-                    }
                     window.location.hash = ''; // Remove hash
                 });
             } else {
@@ -388,13 +424,6 @@
                     if (featuresSection) {
                         featuresSection.scrollIntoView({ behavior: 'smooth' });
                     }
-                    const navbarCollapse = document.getElementById('navbarNav');
-                    if (navbarCollapse) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-                        bsCollapse.hide();
-                    } else {
-                        console.error("navbarNav not found");
-                    }
                     window.location.hash = ''; // Remove hash
                 });
             } else {
@@ -405,13 +434,6 @@
                 navTerms.addEventListener('click', (e) => {
                     e.preventDefault();
                     showTerms();
-                    const navbarCollapse = document.getElementById('navbarNav');
-                    if (navbarCollapse) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-                        bsCollapse.hide();
-                    } else {
-                        console.error("navbarNav not found");
-                    }
                     window.location.href = 'https://mwdzay.netlify.app/#terms'; // Navigate to full URL
                 });
             } else {
@@ -422,13 +444,6 @@
                 navPolicy.addEventListener('click', (e) => {
                     e.preventDefault();
                     showPolicy();
-                    const navbarCollapse = document.getElementById('navbarNav');
-                    if (navbarCollapse) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-                        bsCollapse.hide();
-                    } else {
-                        console.error("nav-policy not found");
-                    }
                     window.location.href = 'https://mwdzay.netlify.app/#policy'; // Navigate to full URL
                 });
             } else {
@@ -440,13 +455,6 @@
                     e.preventDefault();
                     showTerms();
                     window.scrollTo(0, 0);
-                    const navbarCollapse = document.getElementById('navbarNav');
-                    if (navbarCollapse) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-                        bsCollapse.hide();
-                    } else {
-                        console.error("navbarNav not found");
-                    }
                     window.location.href = 'https://mwdzay.netlify.app/#terms'; // Navigate to full URL
                 });
             } else {
@@ -458,13 +466,6 @@
                     e.preventDefault();
                     showPolicy();
                     window.scrollTo(0, 0);
-                    const navbarCollapse = document.getElementById('navbarNav');
-                    if (navbarCollapse) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-                        bsCollapse.hide();
-                    } else {
-                        console.error("navbarNav not found");
-                    }
                     window.location.href = 'https://mwdzay.netlify.app/#policy'; // Navigate to full URL
                 });
             } else {
