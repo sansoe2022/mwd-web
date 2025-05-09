@@ -161,234 +161,6 @@
             <section class="bg-dark text-white text-center py-5">
                 <div class="container">
                     <h3>Ready to get started?</h3>
-                    <p
-
-System: You are Grok 3 built by xAI.
-
-I'm sorry, but the code you provided is incomplete, as it cuts off in the middle of the HTML. To properly diagnose why clicking the "Terms" item doesn't show anything, I need the complete `index.html` file, especially the full JavaScript section and the closing tags. The issue is likely related to the `showTerms()` function or the event listener for `nav-terms`, but I can't confirm without the full code.
-
-### Why "Terms" Might Not Show
-Based on the partial code and your description, here are the likely causes:
-1. **Event Listener Not Triggering**:
-   - The event listener for `nav-terms` might not be firing due to a JavaScript error or incorrect setup.
-   - Code snippet:
-     ```javascript
-     document.getElementById('nav-terms').addEventListener('click', function(e) {
-         e.preventDefault();
-         showTerms();
-         // Close the navbar
-         const navbarCollapse = document.getElementById('navbarNav');
-         const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-             toggle: false
-         });
-         bsCollapse.hide();
-     });
-     ```
-     If `showTerms()` isn't called, there might be an error (e.g., `bootstrap` undefined).
-
-2. **showTerms() Function Issue**:
-   - The `showTerms()` function should set `terms-content` to `display: block`, but it might fail if:
-     - The `terms-content` ID is missing or misspelled.
-     - Another style (e.g., CSS `visibility: hidden`) overrides `display: block`.
-     - The function isn't defined correctly in the full code.
-
-3. **Terms Content Not Rendering**:
-   - The `<div id="terms-content">` might be empty or hidden by CSS.
-   - The content from `terms.txt` is included, but if it's not styled correctly or has rendering issues, it might appear blank.
-
-4. **JavaScript Loading Issue**:
-   - If the Bootstrap JS bundle fails to load (`https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js`), the navbar collapse code could throw an error, halting execution.
-
-### Debugging Steps
-1. **Check Browser Console**:
-   - Open your website in a browser, press F12, and go to the Console tab.
-   - Click the "Terms" item and look for errors (e.g., "Cannot read property 'style' of null" or "bootstrap is not defined").
-
-2. **Test showTerms() Manually**:
-   - In the Console, run:
-     ```javascript
-     document.getElementById('terms-content').style.display = 'block';
-     document.getElementById('home-content').style.display = 'none';
-     document.getElementById('policy-content').style.display = 'none';
-     ```
-   - If the Terms content appears, the issue is with the event listener or `showTerms()`.
-
-3. **Verify HTML Structure**:
-   - Ensure `<div id="terms-content">` exists and contains the `terms.txt` content.
-   - Check for typos in IDs or conflicting CSS.
-
-### Temporary Fix
-Since I don't have the complete code, I'll provide an updated `index.html` based on the last complete version you shared, with:
-- The `terms.txt` content from `https://raw.githubusercontent.com/sansoe2022/mwd-web/refs/heads/main/terms.txt` in `<div id="terms-content">`.
-- Simplified event listeners to ensure `showTerms()` works.
-- Debug logs to confirm the function is called.
-- All previous requirements (navbar collapse, "MWD Zay" name, Google Play link).
-- Terms link set to `#terms-content` for anchor navigation.
-
-<xaiArtifact artifact_id="9229bd66-8118-4ce4-9eb1-bf7b69eb0e30" artifact_version_id="26070e80-b00a-4f2f-b53e-1e807c35b7f9" title="index.html" contentType="text/html">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MWD Zay - Download Our App</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <style>
-        /* Custom Styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        .hero-section {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-        
-        .features {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .feature-box {
-            text-align: center;
-            padding: 30px;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-        }
-        
-        .feature-box:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #6a11cb;
-        }
-        
-        .download-btn {
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-weight: 600;
-            margin: 10px;
-            transition: all 0.3s ease;
-        }
-        
-        .download-btn:hover {
-            transform: scale(1.05);
-        }
-        
-        .footer {
-            background-color: #212529;
-            color: white;
-            padding: 40px 0;
-        }
-        
-        .legal-content {
-            padding: 80px 0;
-            min-height: calc(100vh - 350px);
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">MWD Zay</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" id="nav-home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#terms-content" id="nav-terms">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.mwdzay.com/privacy" id="nav-policy">Privacy Policy</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Content Container -->
-    <div id="content-container">
-        <!-- Home Page Content -->
-        <div id="home-content">
-            <!-- Hero Section -->
-            <section class="hero-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h1 class="display-4 fw-bold mb-4">Download MWD Zay</h1>
-                            <p class="lead mb-5">Experience the best features and boost your productivity with our innovative app.</p>
-                            <div>
-                                <a href="https://play.google.com/store/apps/details?id=com.sksdev.mwdcalculator" class="btn btn-dark download-btn">
-                                    <i class="fab fa-google-play me-2"></i> Get it on Google Play
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Features Section -->
-            <section class="features" id="features">
-                <div class="container">
-                    <div class="row text-center mb-5">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="fw-bold">App Features</h2>
-                            <p class="lead text-muted">Discover what makes our app special</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 mb-4">
-                            <div class="feature-box bg-white">
-                                <div class="feature-icon">
-                                    <i class="fas fa-bolt"></i>
-                                </div>
-                                <h5>Lightning Fast</h5>
-                                <p>Our app is optimized for speed and performance.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
-                            <div class="feature-box bg-white">
-                                <div class="feature-icon">
-                                    <i class="fas fa-lock"></i>
-                                </div>
-                                <h5>Secure & Private</h5>
-                                <p>Your data is protected with industry-leading security.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
-                            <div class="feature-box bg-white">
-                                <div class="feature-icon">
-                                    <i class="fas fa-sync"></i>
-                                </div>
-                                <h5>Regular Updates</h5>
-                                <p>We constantly improve and add new features.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Call to Action -->
-            <section class="bg-dark text-white text-center py-5">
-                <div class="container">
-                    <h3>Ready to get started?</h3>
                     <p class="lead mb-4">Download our app now and join thousands of satisfied users</p>
                     <a href="https://play.google.com/store/apps/details?id=com.sksdev.mwdcalculator" class="btn btn-primary download-btn">
                         <i class="fab fa-google-play me-2"></i> Download Now
@@ -564,99 +336,165 @@ Since I don't have the complete code, I'll provide an updated `index.html` based
         // Navigation functions
         function showHome() {
             console.log("Showing Home");
-            document.getElementById('home-content').style.display = 'block';
-            document.getElementById('terms-content').style.display = 'none';
-            document.getElementById('policy-content').style.display = 'none';
-            
-            // Update active nav
-            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-            document.getElementById('nav-home').classList.add('active');
+            const homeContent = document.getElementById('home-content');
+            const termsContent = document.getElementById('terms-content');
+            const policyContent = document.getElementById('policy-content');
+            if (homeContent && termsContent && policyContent) {
+                homeContent.style.display = 'block';
+                termsContent.style.display = 'none';
+                policyContent.style.display = 'none';
+                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                document.getElementById('nav-home').classList.add('active');
+            } else {
+                console.error("One or more content elements not found");
+            }
         }
         
         function showTerms() {
             console.log("Showing Terms");
-            document.getElementById('home-content').style.display = 'none';
-            document.getElementById('terms-content').style.display = 'block';
-            document.getElementById('policy-content').style.display = 'none';
-            
-            // Update active nav
-            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-            document.getElementById('nav-terms').classList.add('active');
+            const homeContent = document.getElementById('home-content');
+            const termsContent = document.getElementById('terms-content');
+            const policyContent = document.getElementById('policy-content');
+            if (homeContent && termsContent && policyContent) {
+                homeContent.style.display = 'none';
+                termsContent.style.display = 'block';
+                policyContent.style.display = 'none';
+                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                document.getElementById('nav-terms').classList.add('active');
+            } else {
+                console.error("One or more content elements not found");
+            }
         }
         
         function showPolicy() {
             console.log("Showing Policy");
-            document.getElementById('home-content').style.display = 'none';
-            document.getElementById('terms-content').style.display = 'none';
-            document.getElementById('policy-content').style.display = 'block';
-            
-            // Update active nav
-            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-            document.getElementById('nav-policy').classList.add('active');
+            const homeContent = document.getElementById('home-content');
+            const termsContent = document.getElementById('terms-content');
+            const policyContent = document.getElementById('policy-content');
+            if (homeContent && termsContent && policyContent) {
+                homeContent.style.display = 'none';
+                termsContent.style.display = 'none';
+                policyContent.style.display = 'block';
+                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                document.getElementById('nav-policy').classList.add('active');
+            } else {
+                console.error("One or more content elements not found");
+            }
         }
         
-        // Event listeners
-        document.getElementById('nav-home').addEventListener('click', function(e) {
-            e.preventDefault();
+        // Event listeners with error handling
+        document.addEventListener('DOMContentLoaded', () => {
+            const navHome = document.getElementById('nav-home');
+            const navFeatures = document.getElementById('nav-features');
+            const navTerms = document.getElementById('nav-terms');
+            const navPolicy = document.getElementById('nav-policy');
+            const footerTerms = document.getElementById('footer-terms');
+            const footerPolicy = document.getElementById('footer-policy');
+
+            if (navHome) {
+                navHome.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showHome();
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    if (navbarCollapse) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                        bsCollapse.hide();
+                    } else {
+                        console.error("navbarNav not found");
+                    }
+                });
+            } else {
+                console.error("nav-home not found");
+            }
+
+            if (navFeatures) {
+                navFeatures.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showHome();
+                    const featuresSection = document.getElementById('features');
+                    if (featuresSection) {
+                        featuresSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    if (navbarCollapse) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                        bsCollapse.hide();
+                    } else {
+                        console.error("navbarNav not found");
+                    }
+                });
+            } else {
+                console.error("nav-features not found");
+            }
+
+            if (navTerms) {
+                navTerms.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showTerms();
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    if (navbarCollapse) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                        bsCollapse.hide();
+                    } else {
+                        console.error("navbarNav not found");
+                    }
+                });
+            } else {
+                console.error("nav-terms not found");
+            }
+
+            if (navPolicy) {
+                navPolicy.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showPolicy();
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    if (navbarCollapse) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                        bsCollapse.hide();
+                    } else {
+                        console.error("nav-policy not found");
+                    }
+                });
+            } else {
+                console.error("nav-policy not found");
+            }
+
+            if (footerTerms) {
+                footerTerms.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showTerms();
+                    window.scrollTo(0, 0);
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    if (navbarCollapse) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                        bsCollapse.hide();
+                    } else {
+                        console.error("navbarNav not found");
+                    }
+                });
+            } else {
+                console.error("footer-terms not found");
+            }
+
+            if (footerPolicy) {
+                footerPolicy.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showPolicy();
+                    window.scrollTo(0, 0);
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    if (navbarCollapse) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                        bsCollapse.hide();
+                    } else {
+                        console.error("navbarNav not found");
+                    }
+                });
+            } else {
+                console.error("footer-policy not found");
+            }
+
+            // Initialize with Home content
             showHome();
-            const navbarCollapse = document.getElementById('navbarNav');
-            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                toggle: false
-            });
-            bsCollapse.hide();
-        });
-        
-        document.getElementById('nav-features').addEventListener('click', function(e) {
-            e.preventDefault();
-            showHome();
-            document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
-            const navbarCollapse = document.getElementById('navbarNav');
-            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                toggle: false
-            });
-            bsCollapse.hide();
-        });
-        
-        document.getElementById('nav-terms').addEventListener('click', function(e) {
-            e.preventDefault();
-            showTerms();
-            const navbarCollapse = document.getElementById('navbarNav');
-            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                toggle: false
-            });
-            bsCollapse.hide();
-        });
-        
-        document.getElementById('nav-policy').addEventListener('click', function(e) {
-            e.preventDefault();
-            showPolicy();
-            const navbarCollapse = document.getElementById('navbarNav');
-            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                toggle: false
-            });
-            bsCollapse.hide();
-        });
-        
-        document.getElementById('footer-terms').addEventListener('click', function(e) {
-            e.preventDefault();
-            showTerms();
-            window.scrollTo(0, 0);
-            const navbarCollapse = document.getElementById('navbarNav');
-            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                toggle: false
-            });
-            bsCollapse.hide();
-        });
-        
-        document.getElementById('footer-policy').addEventListener('click', function(e) {
-            e.preventDefault();
-            showPolicy();
-            window.scrollTo(0, 0);
-            const navbarCollapse = document.getElementById('navbarNav');
-            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                toggle: false
-            });
-            bsCollapse.hide();
         });
     </script>
 </body>
