@@ -41,8 +41,8 @@
         }
 
         .navbar .navbar-brand .nav-icon {
-            font-size: 1.8rem;
-            color: #3366ff;
+            width: 1.8rem;
+            height: 1.8rem;
         }
 
         .navbar .navbar-nav .nav-link {
@@ -123,7 +123,8 @@
 
         /* Hero section app icon styling */
         .app-icon {
-            font-size: 3rem;
+            width: 3rem;
+            height: 3rem;
             margin-bottom: 1rem;
         }
     </style>
@@ -133,7 +134,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="fab fa-app-store-ios nav-icon"></i> MWD Zay
+                <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/mwd_icon.png" alt="MWD Zay Icon" class="nav-icon"> MWD Zay
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -167,7 +168,7 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="mb-4">
-                                <i class="fab fa-app-store-ios app-icon" style="color: #3366ff;"></i>
+                                <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/mwd_icon.png" alt="MWD Zay Icon" class="app-icon">
                                 <h2 class="display-6 mb-0" style="color: black;">MWD Zay</h2>
                             </div>
                             <p class="lead mb-5" style="color: black;">A powerful app designed to enhance your productivity with advanced features and a user-friendly interface.</p>
@@ -406,10 +407,22 @@
             const footerTerms = document.getElementById('footer-terms');
             const footerPolicy = document.getElementById('footer-policy');
 
+            // Function to collapse navbar
+            const collapseNavbar = () => {
+                const navbarCollapse = document.getElementById('navbarNav');
+                if (navbarCollapse) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                    bsCollapse.hide();
+                } else {
+                    console.error("navbarNav not found");
+                }
+            };
+
             if (navHome) {
                 navHome.addEventListener('click', (e) => {
                     e.preventDefault();
                     showHome();
+                    collapseNavbar();
                     window.location.hash = ''; // Remove hash
                 });
             } else {
@@ -424,6 +437,7 @@
                     if (featuresSection) {
                         featuresSection.scrollIntoView({ behavior: 'smooth' });
                     }
+                    collapseNavbar();
                     window.location.hash = ''; // Remove hash
                 });
             } else {
@@ -434,6 +448,7 @@
                 navTerms.addEventListener('click', (e) => {
                     e.preventDefault();
                     showTerms();
+                    collapseNavbar();
                     window.location.href = 'https://mwdzay.netlify.app/#terms'; // Navigate to full URL
                 });
             } else {
@@ -444,6 +459,7 @@
                 navPolicy.addEventListener('click', (e) => {
                     e.preventDefault();
                     showPolicy();
+                    collapseNavbar();
                     window.location.href = 'https://mwdzay.netlify.app/#policy'; // Navigate to full URL
                 });
             } else {
@@ -455,6 +471,7 @@
                     e.preventDefault();
                     showTerms();
                     window.scrollTo(0, 0);
+                    collapseNavbar();
                     window.location.href = 'https://mwdzay.netlify.app/#terms'; // Navigate to full URL
                 });
             } else {
@@ -466,6 +483,7 @@
                     e.preventDefault();
                     showPolicy();
                     window.scrollTo(0, 0);
+                    collapseNavbar();
                     window.location.href = 'https://mwdzay.netlify.app/#policy'; // Navigate to full URL
                 });
             } else {
