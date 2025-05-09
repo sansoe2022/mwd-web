@@ -3,39 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MWD Zay - Exchange Rate Calculator</title>
+    <title>AppName - Download Our App</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* Theme Variables */
-        :root {
-            --primary-color: #0099ff;
-            --secondary-color: #00bfff;
-            --dark-color: #005a9e;
-            --light-bg: #f8f9fa;
-            --dark-bg: #212529;
-            --light-text: #212529;
-            --dark-text: #ffffff;
-            --light-card: #ffffff;
-            --dark-card: #343a40;
-            --light-input: #ffffff;
-            --dark-input: #495057;
-        }
-        
+        /* Custom Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            transition: all 0.3s ease;
-        }
-        
-        body.dark-mode {
-            background-color: #121212;
-            color: var(--dark-text);
         }
         
         .hero-section {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
             color: white;
             padding: 100px 0;
             text-align: center;
@@ -43,12 +23,7 @@
         
         .features {
             padding: 80px 0;
-            background-color: var(--light-bg);
-            transition: all 0.3s ease;
-        }
-        
-        .dark-mode .features {
-            background-color: #1a1a1a;
+            background-color: #f8f9fa;
         }
         
         .feature-box {
@@ -56,12 +31,6 @@
             padding: 30px;
             border-radius: 10px;
             transition: all 0.3s ease;
-            background-color: var(--light-card);
-        }
-        
-        .dark-mode .feature-box {
-            background-color: var(--dark-card);
-            color: var(--dark-text);
         }
         
         .feature-box:hover {
@@ -72,7 +41,7 @@
         .feature-icon {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            color: var(--primary-color);
+            color: #6a11cb;
         }
         
         .download-btn {
@@ -81,104 +50,21 @@
             font-weight: 600;
             margin: 10px;
             transition: all 0.3s ease;
-            background-color: var(--dark-color);
-            border: none;
         }
         
         .download-btn:hover {
             transform: scale(1.05);
-            background-color: var(--primary-color);
         }
         
         .footer {
-            background-color: var(--dark-bg);
+            background-color: #212529;
             color: white;
             padding: 40px 0;
-            transition: all 0.3s ease;
         }
         
         .legal-content {
             padding: 80px 0;
             min-height: calc(100vh - 350px);
-            transition: all 0.3s ease;
-        }
-        
-        .dark-mode .legal-content .card {
-            background-color: var(--dark-card);
-            color: var(--dark-text);
-        }
-        
-        /* App Showcase Section */
-        .app-showcase {
-            padding: 80px 0;
-            background-color: var(--light-bg);
-            transition: all 0.3s ease;
-        }
-        
-        .dark-mode .app-showcase {
-            background-color: #1a1a1a;
-        }
-        
-        .app-card {
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 30px;
-            transition: all 0.3s ease;
-            background-color: var(--light-card);
-        }
-        
-        .dark-mode .app-card {
-            background-color: var(--dark-card);
-            color: var(--dark-text);
-            box-shadow: 0 10px 30px rgba(255,255,255,0.05);
-        }
-        
-        .rate-info {
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-            background-color: var(--light-bg);
-        }
-        
-        .dark-mode .rate-info {
-            background-color: #2c3034;
-        }
-        
-        .transaction-history {
-            max-height: 300px;
-            overflow-y: auto;
-        }
-        
-        .dark-mode .table {
-            color: var(--dark-text);
-        }
-        
-        .language-switch, .theme-switch {
-            cursor: pointer;
-        }
-        
-        .dark-mode .form-control, .dark-mode .form-select {
-            background-color: var(--dark-input);
-            color: var(--dark-text);
-            border-color: #6c757d;
-        }
-        
-        .dark-mode .bg-light {
-            background-color: #2c3034 !important;
-            color: var(--dark-text);
-        }
-        
-        .dark-mode .text-muted {
-            color: #adb5bd !important;
-        }
-        
-        .dark-mode .navbar-dark {
-            background-color: #121212 !important;
-        }
-        
-        .dark-mode hr {
-            border-color: #6c757d;
         }
     </style>
 </head>
@@ -186,51 +72,25 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="/api/placeholder/30/30" alt="MWD Zay" class="d-inline-block align-text-top me-2">
-                <span data-i18n="app-name">MWD Zay</span>
-            </a>
+            <a class="navbar-brand" href="index.html">AppName</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" id="nav-home" data-i18n="nav-home">Home</a>
+                        <a class="nav-link active" href="#" id="nav-home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-showcase" data-i18n="nav-showcase">App Showcase</a>
+                        <a class="nav-link" href="#" id="nav-features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-features" data-i18n="nav-features">Features</a>
+                        <a class="nav-link" href="#" id="nav-terms">Terms</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-terms" data-i18n="nav-terms">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-policy" data-i18n="nav-policy">Privacy Policy</a>
+                        <a class="nav-link" href="#" id="nav-policy">Privacy Policy</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <div class="dropdown me-3">
-                        <button class="btn btn-outline-light dropdown-toggle" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-palette"></i> <span id="current-theme">Light Mode</span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
-                            <li><a class="dropdown-item theme-switch" href="#" data-theme="light"><i class="fas fa-sun me-2"></i> Light Mode</a></li>
-                            <li><a class="dropdown-item theme-switch" href="#" data-theme="dark"><i class="fas fa-moon me-2"></i> Dark Mode</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-outline-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-globe"></i> <span id="current-language">English</span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                            <li><a class="dropdown-item language-switch" href="#" data-lang="en">English</a></li>
-                            <li><a class="dropdown-item language-switch" href="#" data-lang="my">မြန်မာဘာသာ</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
@@ -244,122 +104,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
-                            <h1 class="display-4 fw-bold mb-4" data-i18n="hero-title">MWD Zay Exchange Rate Calculator</h1>
-                            <p class="lead mb-5" data-i18n="hero-subtitle">Calculate and track exchange rates between Thai Baht (THB) and Myanmar Kyat (MMK) with our easy-to-use app.</p>
+                            <h1 class="display-4 fw-bold mb-4">Download Our Amazing App</h1>
+                            <p class="lead mb-5">Experience the best features and boost your productivity with our innovative app.</p>
                             <div>
                                 <a href="#" class="btn btn-dark download-btn">
-                                    <i class="fab fa-google-play me-2"></i> <span data-i18n="download-play">Get it on Google Play</span>
+                                    <i class="fab fa-google-play me-2"></i> Get it on Google Play
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- App Showcase Section -->
-            <section class="app-showcase" id="showcase">
-                <div class="container">
-                    <div class="row text-center mb-5">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="fw-bold" data-i18n="showcase-title">App Showcase</h2>
-                            <p class="lead text-muted" data-i18n="showcase-subtitle">Experience our powerful exchange rate calculator in action</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 mb-4">
-                            <div class="app-card">
-                                <div class="rate-info mb-4">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="mb-0" data-i18n="current-rate">Current Rate</h5>
-                                        <span class="badge bg-success" data-i18n="updated">Updated 5 mins ago</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-3">
-                                        <div>
-                                            <h3>1 THB</h3>
-                                            <p class="text-muted" data-i18n="thai-baht">Thai Baht</p>
-                                        </div>
-                                        <div class="text-center">
-                                            <i class="fas fa-exchange-alt fa-2x text-primary my-2"></i>
-                                        </div>
-                                        <div class="text-end">
-                                            <h3>50.25 MMK</h3>
-                                            <p class="text-muted" data-i18n="myanmar-kyat">Myanmar Kyat</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <form id="calculator-form">
-                                    <div class="mb-3">
-                                        <label for="amount" class="form-label" data-i18n="amount">Amount</label>
-                                        <input type="number" class="form-control form-control-lg" id="amount" value="1">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="from-currency" class="form-label" data-i18n="from-currency">From Currency</label>
-                                        <select class="form-select form-select-lg" id="from-currency">
-                                            <option value="THB" selected>THB - Thai Baht</option>
-                                            <option value="MMK">MMK - Myanmar Kyat</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="to-currency" class="form-label" data-i18n="to-currency">To Currency</label>
-                                        <select class="form-select form-select-lg" id="to-currency">
-                                            <option value="THB">THB - Thai Baht</option>
-                                            <option value="MMK" selected>MMK - Myanmar Kyat</option>
-                                        </select>
-                                    </div>
-                                    <div class="d-grid">
-                                        <button type="button" class="btn btn-primary btn-lg" id="calculate-btn" data-i18n="calculate">Calculate</button>
-                                    </div>
-                                </form>
-                                <div class="mt-4 p-3 bg-light rounded">
-                                    <h4 class="text-center mb-0" data-i18n="result">Result</h4>
-                                    <p class="display-6 text-center mb-0" id="result">50.25 MMK</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="app-card h-100">
-                                <h4 class="mb-4" data-i18n="transaction-history">Transaction History</h4>
-                                <div class="transaction-history">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th data-i18n="date">Date</th>
-                                                <th data-i18n="from">From</th>
-                                                <th data-i18n="to">To</th>
-                                                <th data-i18n="rate">Rate</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>09/05/2025</td>
-                                                <td>1 THB</td>
-                                                <td>50.25 MMK</td>
-                                                <td>50.25</td>
-                                            </tr>
-                                            <tr>
-                                                <td>08/05/2025</td>
-                                                <td>1000 MMK</td>
-                                                <td>19.90 THB</td>
-                                                <td>0.0199</td>
-                                            </tr>
-                                            <tr>
-                                                <td>07/05/2025</td>
-                                                <td>500 THB</td>
-                                                <td>25,100 MMK</td>
-                                                <td>50.20</td>
-                                            </tr>
-                                            <tr>
-                                                <td>06/05/2025</td>
-                                                <td>10,000 MMK</td>
-                                                <td>199.60 THB</td>
-                                                <td>0.01996</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="d-grid mt-3">
-                                    <button class="btn btn-outline-primary" data-i18n="view-all-transactions">View All Transactions</button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -371,36 +121,36 @@
                 <div class="container">
                     <div class="row text-center mb-5">
                         <div class="col-lg-8 mx-auto">
-                            <h2 class="fw-bold" data-i18n="features-title">App Features</h2>
-                            <p class="lead text-muted" data-i18n="features-subtitle">Discover what makes MWD Zay special</p>
+                            <h2 class="fw-bold">App Features</h2>
+                            <p class="lead text-muted">Discover what makes our app special</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 mb-4">
-                            <div class="feature-box">
+                            <div class="feature-box bg-white">
                                 <div class="feature-icon">
-                                    <i class="fas fa-sync-alt"></i>
+                                    <i class="fas fa-bolt"></i>
                                 </div>
-                                <h5 data-i18n="feature1-title">Real-time Exchange Rates</h5>
-                                <p data-i18n="feature1-desc">Get the latest THB to MMK exchange rates updated regularly.</p>
+                                <h5>Lightning Fast</h5>
+                                <p>Our app is optimized for speed and performance.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 mb-4">
-                            <div class="feature-box">
+                            <div class="feature-box bg-white">
                                 <div class="feature-icon">
-                                    <i class="fas fa-history"></i>
+                                    <i class="fas fa-lock"></i>
                                 </div>
-                                <h5 data-i18n="feature2-title">Transaction History</h5>
-                                <p data-i18n="feature2-desc">Keep track of all your past currency conversions.</p>
+                                <h5>Secure & Private</h5>
+                                <p>Your data is protected with industry-leading security.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 mb-4">
-                            <div class="feature-box">
+                            <div class="feature-box bg-white">
                                 <div class="feature-icon">
-                                    <i class="fas fa-bell"></i>
+                                    <i class="fas fa-sync"></i>
                                 </div>
-                                <h5 data-i18n="feature3-title">Rate Alerts</h5>
-                                <p data-i18n="feature3-desc">Get notified when exchange rates reach your target levels.</p>
+                                <h5>Regular Updates</h5>
+                                <p>We constantly improve and add new features.</p>
                             </div>
                         </div>
                     </div>
@@ -410,10 +160,10 @@
             <!-- Call to Action -->
             <section class="bg-dark text-white text-center py-5">
                 <div class="container">
-                    <h3 data-i18n="cta-title">Ready to get started?</h3>
-                    <p class="lead mb-4" data-i18n="cta-subtitle">Download MWD Zay now and manage your currency exchanges</p>
+                    <h3>Ready to get started?</h3>
+                    <p class="lead mb-4">Download our app now and join thousands of satisfied users</p>
                     <a href="#" class="btn btn-primary download-btn">
-                        <i class="fab fa-google-play me-2"></i> <span data-i18n="download-now">Download Now</span>
+                        <i class="fab fa-google-play me-2"></i> Download Now
                     </a>
                 </div>
             </section>
@@ -422,34 +172,34 @@
         <!-- Terms Page Content -->
         <div id="terms-content" style="display: none;">
             <div class="container legal-content">
-                <h2 class="mb-4" data-i18n="terms-title">Terms and Conditions</h2>
+                <h2 class="mb-4">Terms and Conditions</h2>
                 <div class="card p-4">
-                    <h4>1. <span data-i18n="terms-acceptance">Acceptance of Terms</span></h4>
-                    <p data-i18n="terms-acceptance-desc">By downloading, installing, or using the app, you agree to be bound by these Terms and Conditions. If you do not agree to these Terms, you should not use the app.</p>
+                    <h4>1. Acceptance of Terms</h4>
+                    <p>By downloading, installing, or using the app, you agree to be bound by these Terms and Conditions. If you do not agree to these Terms, you should not use the app.</p>
                     
-                    <h4>2. <span data-i18n="terms-license">Use License</span></h4>
-                    <p data-i18n="terms-license-desc">We grant you a limited, non-exclusive, non-transferable, revocable license to use the app for your personal, non-commercial purposes subject to these Terms.</p>
+                    <h4>2. Use License</h4>
+                    <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the app for your personal, non-commercial purposes subject to these Terms.</p>
                     
-                    <h4>3. <span data-i18n="terms-restrictions">Restrictions</span></h4>
-                    <p data-i18n="terms-restrictions-intro">You agree not to:</p>
+                    <h4>3. Restrictions</h4>
+                    <p>You agree not to:</p>
                     <ul>
-                        <li data-i18n="terms-restrictions-1">Modify, adapt or hack the app</li>
-                        <li data-i18n="terms-restrictions-2">Use the app for any illegal purpose</li>
-                        <li data-i18n="terms-restrictions-3">Transmit viruses or other harmful code</li>
-                        <li data-i18n="terms-restrictions-4">Attempt to gain unauthorized access to our systems</li>
+                        <li>Modify, adapt or hack the app</li>
+                        <li>Use the app for any illegal purpose</li>
+                        <li>Transmit viruses or other harmful code</li>
+                        <li>Attempt to gain unauthorized access to our systems</li>
                     </ul>
                     
-                    <h4>4. <span data-i18n="terms-rates">Exchange Rates</span></h4>
-                    <p data-i18n="terms-rates-desc">The exchange rates provided in the app are for informational purposes only and may not be the exact rates used in actual currency exchange transactions. We strive to keep the rates updated but cannot guarantee their accuracy at all times.</p>
+                    <h4>4. User Content</h4>
+                    <p>You retain ownership of any content you create or upload to the app. By submitting content, you grant us a worldwide, royalty-free license to use, reproduce, and display such content in connection with providing the service.</p>
                     
-                    <h4>5. <span data-i18n="terms-termination">Termination</span></h4>
-                    <p data-i18n="terms-termination-desc">We may terminate or suspend your access to the app immediately, without prior notice or liability, for any breach of these Terms.</p>
+                    <h4>5. Termination</h4>
+                    <p>We may terminate or suspend your access to the app immediately, without prior notice or liability, for any breach of these Terms.</p>
                     
-                    <h4>6. <span data-i18n="terms-changes">Changes to Terms</span></h4>
-                    <p data-i18n="terms-changes-desc">We reserve the right to update or change these Terms at any time. Your continued use of the app after we post modifications constitutes your acceptance of the revised Terms.</p>
+                    <h4>6. Changes to Terms</h4>
+                    <p>We reserve the right to update or change these Terms at any time. Your continued use of the app after we post modifications constitutes your acceptance of the revised Terms.</p>
                     
-                    <h4>7. <span data-i18n="terms-contact">Contact Us</span></h4>
-                    <p data-i18n="terms-contact-desc">If you have any questions about these Terms, please contact us at support@mwdzay.com</p>
+                    <h4>7. Contact Us</h4>
+                    <p>If you have any questions about these Terms, please contact us at support@appname.com</p>
                 </div>
             </div>
         </div>
@@ -457,39 +207,39 @@
         <!-- Privacy Policy Content -->
         <div id="policy-content" style="display: none;">
             <div class="container legal-content">
-                <h2 class="mb-4" data-i18n="privacy-title">Privacy Policy</h2>
+                <h2 class="mb-4">Privacy Policy</h2>
                 <div class="card p-4">
-                    <h4>1. <span data-i18n="privacy-collect">Information We Collect</span></h4>
-                    <p data-i18n="privacy-collect-desc">We may collect personal information that you provide directly to us, such as your name, email address, and other contact details when you register for an account.</p>
+                    <h4>1. Information We Collect</h4>
+                    <p>We may collect personal information that you provide directly to us, such as your name, email address, and other contact details when you register for an account.</p>
                     
-                    <h4>2. <span data-i18n="privacy-use">How We Use Your Information</span></h4>
-                    <p data-i18n="privacy-use-intro">We use the information we collect to:</p>
+                    <h4>2. How We Use Your Information</h4>
+                    <p>We use the information we collect to:</p>
                     <ul>
-                        <li data-i18n="privacy-use-1">Provide, maintain, and improve our services</li>
-                        <li data-i18n="privacy-use-2">Process transactions and send related information</li>
-                        <li data-i18n="privacy-use-3">Send you technical notices, updates, and support messages</li>
-                        <li data-i18n="privacy-use-4">Respond to your comments and questions</li>
+                        <li>Provide, maintain, and improve our services</li>
+                        <li>Process transactions and send related information</li>
+                        <li>Send you technical notices, updates, and support messages</li>
+                        <li>Respond to your comments and questions</li>
                     </ul>
                     
-                    <h4>3. <span data-i18n="privacy-share">Sharing of Information</span></h4>
-                    <p data-i18n="privacy-share-desc">We do not share your personal information with third parties except as described in this Privacy Policy:</p>
+                    <h4>3. Sharing of Information</h4>
+                    <p>We do not share your personal information with third parties except as described in this Privacy Policy:</p>
                     <ul>
-                        <li data-i18n="privacy-share-1">With vendors and service providers who need access to such information to carry out work on our behalf</li>
-                        <li data-i18n="privacy-share-2">In response to a legal request if we believe disclosure is required by law</li>
-                        <li data-i18n="privacy-share-3">To protect the rights, property, and safety of our users or others</li>
+                        <li>With vendors and service providers who need access to such information to carry out work on our behalf</li>
+                        <li>In response to a legal request if we believe disclosure is required by law</li>
+                        <li>To protect the rights, property, and safety of our users or others</li>
                     </ul>
                     
-                    <h4>4. <span data-i18n="privacy-security">Security</span></h4>
-                    <p data-i18n="privacy-security-desc">We take reasonable measures to help protect your personal information from loss, theft, misuse, and unauthorized access.</p>
+                    <h4>4. Security</h4>
+                    <p>We take reasonable measures to help protect your personal information from loss, theft, misuse, and unauthorized access.</p>
                     
-                    <h4>5. <span data-i18n="privacy-choices">Your Choices</span></h4>
-                    <p data-i18n="privacy-choices-desc">You may update, correct, or delete your account information at any time by logging into your account settings. You may also opt out of receiving promotional emails from us by following the instructions in those emails.</p>
+                    <h4>5. Your Choices</h4>
+                    <p>You may update, correct, or delete your account information at any time by logging into your account settings. You may also opt out of receiving promotional emails from us by following the instructions in those emails.</p>
                     
-                    <h4>6. <span data-i18n="privacy-changes">Changes to Privacy Policy</span></h4>
-                    <p data-i18n="privacy-changes-desc">We may change this Privacy Policy from time to time. If we make changes, we will notify you by revising the date at the top of the policy.</p>
+                    <h4>6. Changes to Privacy Policy</h4>
+                    <p>We may change this Privacy Policy from time to time. If we make changes, we will notify you by revising the date at the top of the policy.</p>
                     
-                    <h4>7. <span data-i18n="privacy-contact">Contact Us</span></h4>
-                    <p data-i18n="privacy-contact-desc">If you have any questions about this Privacy Policy, please contact us at privacy@mwdzay.com</p>
+                    <h4>7. Contact Us</h4>
+                    <p>If you have any questions about this Privacy Policy, please contact us at privacy@appname.com</p>
                 </div>
             </div>
         </div>
@@ -500,21 +250,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>MWD Zay</h5>
-                    <p data-i18n="footer-tagline">Making currency exchange easier for everyone.</p>
+                    <h5>AppName</h5>
+                    <p>Making your life easier through technology.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#" class="text-white" id="footer-terms" data-i18n="footer-terms">Terms</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white" id="footer-policy" data-i18n="footer-policy">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white" data-i18n="footer-contact">Contact</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white" id="footer-terms">Terms</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white" id="footer-policy">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2025 MWD Zay. <span data-i18n="footer-rights">All rights reserved.</span></p>
+                    <p class="mb-0">&copy; 2025 AppName. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -523,58 +273,73 @@
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JavaScript -->
+    <!-- Custom JavaScript for Navigation -->
     <script>
-        // Language translations
-        const translations = {
-            'en': {
-                'app-name': 'MWD Zay',
-                'nav-home': 'Home',
-                'nav-showcase': 'App Showcase',
-                'nav-features': 'Features',
-                'nav-terms': 'Terms',
-                'nav-policy': 'Privacy Policy',
-                'hero-title': 'MWD Zay Exchange Rate Calculator',
-                'hero-subtitle': 'Calculate and track exchange rates between Thai Baht (THB) and Myanmar Kyat (MMK) with our easy-to-use app.',
-                'download-play': 'Get it on Google Play',
-                'showcase-title': 'App Showcase',
-                'showcase-subtitle': 'Experience our powerful exchange rate calculator in action',
-                'current-rate': 'Current Rate',
-                'updated': 'Updated 5 mins ago',
-                'thai-baht': 'Thai Baht',
-                'myanmar-kyat': 'Myanmar Kyat',
-                'amount': 'Amount',
-                'from-currency': 'From Currency',
-                'to-currency': 'To Currency',
-                'calculate': 'Calculate',
-                'result': 'Result',
-                'transaction-history': 'Transaction History',
-                'date': 'Date',
-                'from': 'From',
-                'to': 'To',
-                'rate': 'Rate',
-                'view-all-transactions': 'View All Transactions',
-                'features-title': 'App Features',
-                'features-subtitle': 'Discover what makes MWD Zay special',
-                'feature1-title': 'Real-time Exchange Rates',
-                'feature1-desc': 'Get the latest THB to MMK exchange rates updated regularly.',
-                'feature2-title': 'Transaction History',
-                'feature2-desc': 'Keep track of all your past currency conversions.',
-                'feature3-title': 'Rate Alerts',
-                'feature3-desc': 'Get notified when exchange rates reach your target levels.',
-                'cta-title': 'Ready to get started?',
-                'cta-subtitle': 'Download MWD Zay now and manage your currency exchanges',
-                'download-now': 'Download Now',
-                'terms-title': 'Terms and Conditions',
-                'terms-acceptance': 'Acceptance of Terms',
-                'terms-acceptance-desc': 'By downloading, installing, or using the app, you agree to be bound by these Terms and Conditions. If you do not agree to these Terms, you should not use the app.',
-                'terms-license': 'Use License',
-                'terms-license-desc': 'We grant you a limited, non-exclusive, non-transferable, revocable license to use the app for your personal, non-commercial purposes subject to these Terms.',
-                'terms-restrictions': 'Restrictions',
-                'terms-restrictions-intro': 'You agree not to:',
-                'terms-restrictions-1': 'Modify, adapt or hack the app',
-                'terms-restrictions-2': 'Use the app for any illegal purpose',
-                'terms-restrictions-3': 'Transmit viruses or other harmful code',
-                'terms-restrictions-4': 'Attempt to gain unauthorized access to our systems',
-                'terms-rates': 'Exchange Rates',
-                'terms-rates-desc': 'The exchange rates provided in the app are for informational purposes only and may not be the exact rates use
+        // Navigation functions
+        function showHome() {
+            document.getElementById('home-content').style.display = 'block';
+            document.getElementById('terms-content').style.display = 'none';
+            document.getElementById('policy-content').style.display = 'none';
+            
+            // Update active nav
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            document.getElementById('nav-home').classList.add('active');
+        }
+        
+        function showTerms() {
+            document.getElementById('home-content').style.display = 'none';
+            document.getElementById('terms-content').style.display = 'block';
+            document.getElementById('policy-content').style.display = 'none';
+            
+            // Update active nav
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            document.getElementById('nav-terms').classList.add('active');
+        }
+        
+        function showPolicy() {
+            document.getElementById('home-content').style.display = 'none';
+            document.getElementById('terms-content').style.display = 'none';
+            document.getElementById('policy-content').style.display = 'block';
+            
+            // Update active nav
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            document.getElementById('nav-policy').classList.add('active');
+        }
+        
+        // Event listeners
+        document.getElementById('nav-home').addEventListener('click', function(e) {
+            e.preventDefault();
+            showHome();
+        });
+        
+        document.getElementById('nav-terms').addEventListener('click', function(e) {
+            e.preventDefault();
+            showTerms();
+        });
+        
+        document.getElementById('nav-policy').addEventListener('click', function(e) {
+            e.preventDefault();
+            showPolicy();
+        });
+        
+        document.getElementById('nav-features').addEventListener('click', function(e) {
+            e.preventDefault();
+            showHome();
+            // Scroll to features section
+            document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        document.getElementById('footer-terms').addEventListener('click', function(e) {
+            e.preventDefault();
+            showTerms();
+            window.scrollTo(0, 0);
+        });
+        
+        document.getElementById('footer-policy').addEventListener('click', function(e) {
+            e.preventDefault();
+            showPolicy();
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+</html>
