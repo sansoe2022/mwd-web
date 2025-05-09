@@ -17,7 +17,7 @@
         }
         
         .hero-section {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            /* Removed background gradient */
             color: white;
             padding: 100px 0;
             text-align: center;
@@ -68,11 +68,38 @@
             padding: 80px 0;
             min-height: calc(100vh - 350px);
         }
+
+        /* Navbar link color to match address bar */
+        .navbar-light .navbar-nav .nav-link,
+        .navbar-light .navbar-brand {
+            color: #6a11cb;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-brand:hover {
+            color: #4a0e8f; /* Slightly darker shade for hover effect */
+        }
+
+        .navbar-light .navbar-nav .nav-link.active {
+            color: #6a11cb;
+            font-weight: bold;
+        }
+
+        /* Ensure navbar toggler icon is visible in light mode */
+        .navbar-light .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(106, 17, 203, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Hero section app icon styling */
+        .app-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">MWD Zay</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,8 +133,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
-                            <h1 class="display-4 fw-bold mb-4">Download MWD Zay</h1>
-                            <p class="lead mb-5">Experience the best features and boost your productivity with our innovative app.</p>
+                            <div class="mb-4">
+                                <i class="fab fa-app-store-ios app-icon" style="color: white;"></i> <!-- Placeholder icon -->
+                                <h2 class="display-6 mb-0" style="color: white;">MWD Zay</h2>
+                            </div>
+                            <p class="lead mb-5" style="color: white;">A powerful app designed to enhance your productivity with advanced features and a user-friendly interface.</p>
                             <div>
                                 <a href="https://play.google.com/store/apps/details?id=com.sksdev.mwdcalculator" class="btn btn-dark download-btn">
                                     <i class="fab fa-google-play me-2"></i> Get it on Google Play
