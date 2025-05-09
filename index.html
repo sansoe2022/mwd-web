@@ -126,25 +126,25 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html" id="nav-home">
+                        <a class="nav-link active" href="index.html">
                             <span data-lang="en">Home</span>
                             <span data-lang="my" style="display:none;">ပင်မစာမျက်နှာ</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#features" id="nav-features">
+                        <a class="nav-link" href="index.html#features">
                             <span data-lang="en">Features</span>
                             <span data-lang="my" style="display:none;">လုပ်ဆောင်ချက်များ</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="terms.html" id="nav-terms">
+                        <a class="nav-link" href="terms.html">
                             <span data-lang="en">Terms</span>
                             <span data-lang="my" style="display:none;">စည်းမျဉ်းများ</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="policy.html" id="nav-policy">
+                        <a class="nav-link" href="policy.html">
                             <span data-lang="en">Privacy Policy</span>
                             <span data-lang="my" style="display:none;">ကိုယ်ရေးအချက်အလက်မူဝါဒ</span>
                         </a>
@@ -319,42 +319,53 @@
     
     <!-- Custom JavaScript -->
     <script>
-        // Language toggle
-        const langToggle = document.getElementById('lang-toggle');
-        let currentLang = 'en';
+        // Language and theme preferences
+        let currentLang = localStorage.getItem('appLanguage') || 'en';
+        let isDarkMode = localStorage.getItem('appTheme') === 'dark';
         
-        langToggle.addEventListener('click', function() {
-            if (currentLang === 'en') {
-                // Switch to Myanmar
-                document.querySelectorAll('[data-lang="en"]').forEach(el => el.style.display = 'none');
-                document.querySelectorAll('[data-lang="my"]').forEach(el => el.style.display = 'inline-block');
-                currentLang = 'my';
-            } else {
-                // Switch to English
+        // Initialize language
+        function setLanguage(lang) {
+            if (lang === 'en') {
                 document.querySelectorAll('[data-lang="my"]').forEach(el => el.style.display = 'none');
                 document.querySelectorAll('[data-lang="en"]').forEach(el => el.style.display = 'inline-block');
-                currentLang = 'en';
+            } else {
+                document.querySelectorAll('[data-lang="en"]').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('[data-lang="my"]').forEach(el => el.style.display = 'inline-block');
             }
+            localStorage.setItem('appLanguage', lang);
+            currentLang = lang;
+        }
+        
+        // Initialize theme
+        function setTheme(darkMode) {
+            if (darkMode) {
+                document.documentElement.setAttribute('data-bs-theme', 'dark');
+                document.getElementById('theme-toggle').classList.remove('fa-moon');
+                document.getElementById('theme-toggle').classList.add('fa-sun');
+                localStorage.setItem('appTheme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-bs-theme', 'light');
+                document.getElementById('theme-toggle').classList.remove('fa-sun');
+                document.getElementById('theme-toggle').classList.add('fa-moon');
+                localStorage.setItem('appTheme', 'light');
+            }
+            isDarkMode = darkMode;
+        }
+        
+        // Apply saved preferences on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            setLanguage(currentLang);
+            setTheme(isDarkMode);
+        });
+        
+        // Language toggle
+        document.getElementById('lang-toggle').addEventListener('click', function() {
+            setLanguage(currentLang === 'en' ? 'my' : 'en');
         });
         
         // Theme toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        let isDarkMode = false;
-        
-        themeToggle.addEventListener('click', function() {
-            if (isDarkMode) {
-                // Switch to light mode
-                document.documentElement.setAttribute('data-bs-theme', 'light');
-                themeToggle.classList.remove('fa-sun');
-                themeToggle.classList.add('fa-moon');
-                isDarkMode = false;
-            } else {
-                // Switch to dark mode
-                document.documentElement.setAttribute('data-bs-theme', 'dark');
-                themeToggle.classList.remove('fa-moon');
-                themeToggle.classList.add('fa-sun');
-                isDarkMode = true;
-            }
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            setTheme(!isDarkMode);
         });
         
         // Smooth scroll for anchor links
