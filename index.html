@@ -386,6 +386,7 @@
         // Handle hash change for URL navigation
         function handleHashChange() {
             const hash = window.location.hash;
+            console.log("Hash detected:", hash);
             if (hash === '#terms') {
                 showTerms();
             } else {
@@ -510,10 +511,15 @@
 
             // Handle initial load and hash changes
             window.addEventListener('hashchange', handleHashChange);
-            handleHashChange(); // Check hash on initial load
-
-            // Initialize with Home content
-            showHome();
+            
+            // Check the hash on initial load before showing any content
+            const initialHash = window.location.hash;
+            console.log("Initial hash on load:", initialHash);
+            if (initialHash === '#terms') {
+                showTerms();
+            } else {
+                showHome();
+            }
         });
     </script>
 </body>
