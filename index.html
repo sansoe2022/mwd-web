@@ -88,7 +88,7 @@
                         <a class="nav-link" href="https://mwdzay.netlify.app/#terms" id="nav-terms">Terms</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.mwdzay.com/privacy" id="nav-policy">Privacy Policy</a>
+                        <a class="nav-link" href="https://mwdzay.netlify.app/#policy" id="nav-policy">Privacy Policy</a>
                     </li>
                 </ul>
             </div>
@@ -314,7 +314,7 @@
                 <div class="col-md-6 text-md-end">
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="https://mwdzay.netlify.app/#terms" class="text-white" id="footer-terms">Terms</a></li>
-                        <li class="list-inline-item"><a href="https://www.mwdzay.com/privacy" class="text-white" id="footer-policy">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="https://mwdzay.netlify.app/#policy" class="text-white" id="footer-policy">Privacy Policy</a></li>
                         <li class="list-inline-item"><a href="#" class="text-white">Contact</a></li>
                     </ul>
                 </div>
@@ -378,6 +378,7 @@
                 policyContent.style.display = 'block';
                 document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
                 document.getElementById('nav-policy').classList.add('active');
+                window.scrollTo(0, 0); // Scroll to top when showing Policy
             } else {
                 console.error("One or more content elements not found");
             }
@@ -389,6 +390,8 @@
             console.log("Hash detected:", hash);
             if (hash === '#terms') {
                 showTerms();
+            } else if (hash === '#policy') {
+                showPolicy();
             } else {
                 showHome();
             }
@@ -469,6 +472,7 @@
                     } else {
                         console.error("nav-policy not found");
                     }
+                    window.location.href = 'https://mwdzay.netlify.app/#policy'; // Navigate to full URL
                 });
             } else {
                 console.error("nav-policy not found");
@@ -504,6 +508,7 @@
                     } else {
                         console.error("navbarNav not found");
                     }
+                    window.location.href = 'https://mwdzay.netlify.app/#policy'; // Navigate to full URL
                 });
             } else {
                 console.error("footer-policy not found");
@@ -517,6 +522,8 @@
             console.log("Initial hash on load:", initialHash);
             if (initialHash === '#terms') {
                 showTerms();
+            } else if (initialHash === '#policy') {
+                showPolicy();
             } else {
                 showHome();
             }
