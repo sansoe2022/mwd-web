@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,42 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         /* Custom Styles */
+        :root {
+            --primary-blue: #0d6efd;
+            --dark-blue: #0b5ed7;
+            --light-blue: #cfe2ff;
+            --white: #ffffff;
+            --dark-bg: #212529;
+            --dark-card: #2c3034;
+        }
+        
+        [data-bs-theme="dark"] {
+            --bs-body-bg: #121212;
+            --bs-body-color: #e6e6e6;
+        }
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         .hero-section {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+            color: var(--white);
             padding: 100px 0;
             text-align: center;
         }
         
+        [data-bs-theme="dark"] .hero-section {
+            background: linear-gradient(135deg, #0a4da1 0%, #0d6efd 100%);
+        }
+        
         .features {
             padding: 80px 0;
-            background-color: #f8f9fa;
+            background-color: var(--white);
+        }
+        
+        [data-bs-theme="dark"] .features {
+            background-color: var(--bs-body-bg);
         }
         
         .feature-box {
@@ -31,6 +53,11 @@
             padding: 30px;
             border-radius: 10px;
             transition: all 0.3s ease;
+            background-color: var(--white);
+        }
+        
+        [data-bs-theme="dark"] .feature-box {
+            background-color: var(--dark-card);
         }
         
         .feature-box:hover {
@@ -41,7 +68,7 @@
         .feature-icon {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            color: #6a11cb;
+            color: var(--primary-blue);
         }
         
         .download-btn {
@@ -50,199 +77,201 @@
             font-weight: 600;
             margin: 10px;
             transition: all 0.3s ease;
+            background-color: var(--primary-blue);
+            color: var(--white);
         }
         
         .download-btn:hover {
             transform: scale(1.05);
+            background-color: var(--dark-blue);
         }
         
         .footer {
-            background-color: #212529;
-            color: white;
+            background-color: var(--primary-blue);
+            color: var(--white);
             padding: 40px 0;
+        }
+        
+        [data-bs-theme="dark"] .footer {
+            background-color: var(--dark-bg);
         }
         
         .legal-content {
             padding: 80px 0;
             min-height: calc(100vh - 350px);
         }
+        
+        .lang-switch {
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        .theme-switch {
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">AppName</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" id="nav-home">Home</a>
+                        <a class="nav-link active" href="index.html" id="nav-home">
+                            <span data-lang="en">Home</span>
+                            <span data-lang="my" style="display:none;">ပင်မစာမျက်နှာ</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-features">Features</a>
+                        <a class="nav-link" href="index.html#features" id="nav-features">
+                            <span data-lang="en">Features</span>
+                            <span data-lang="my" style="display:none;">လုပ်ဆောင်ချက်များ</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-terms">Terms</a>
+                        <a class="nav-link" href="terms.html" id="nav-terms">
+                            <span data-lang="en">Terms</span>
+                            <span data-lang="my" style="display:none;">စည်းမျဉ်းများ</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-policy">Privacy Policy</a>
+                        <a class="nav-link" href="policy.html" id="nav-policy">
+                            <span data-lang="en">Privacy Policy</span>
+                            <span data-lang="my" style="display:none;">ကိုယ်ရေးအချက်အလက်မူဝါဒ</span>
+                        </a>
                     </li>
                 </ul>
+                <div class="d-flex">
+                    <div class="lang-switch bg-light text-primary">
+                        <span id="lang-toggle">EN | MY</span>
+                    </div>
+                    <div class="theme-switch bg-light text-primary">
+                        <i id="theme-toggle" class="fas fa-moon"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Content Container -->
-    <div id="content-container">
-        <!-- Home Page Content -->
-        <div id="home-content">
-            <!-- Hero Section -->
-            <section class="hero-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h1 class="display-4 fw-bold mb-4">Download Our Amazing App</h1>
-                            <p class="lead mb-5">Experience the best features and boost your productivity with our innovative app.</p>
-                            <div>
-                                <a href="#" class="btn btn-dark download-btn">
-                                    <i class="fab fa-google-play me-2"></i> Get it on Google Play
-                                </a>
-                            </div>
+    <!-- Home Page Content -->
+    <div id="home-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="display-4 fw-bold mb-4">
+                            <span data-lang="en">Download Our Amazing App</span>
+                            <span data-lang="my" style="display:none;">ကျွန်ုပ်တို့၏ အံ့သြဖွယ် အက်ပ်ကို ဒေါင်းလုဒ်လုပ်ပါ</span>
+                        </h1>
+                        <p class="lead mb-5">
+                            <span data-lang="en">Experience the best features and boost your productivity with our innovative app.</span>
+                            <span data-lang="my" style="display:none;">အကောင်းဆုံး လုပ်ဆောင်ချက်များကို အသုံးပြုကာ ကျွန်ုပ်တို့၏ တီထွင်ဆန်းသစ်သော အက်ပ်ဖြင့် သင့်ထုတ်လုပ်မှုစွမ်းရည်ကို မြှင့်တင်ပါ။</span>
+                        </p>
+                        <div>
+                            <a href="#" class="btn download-btn">
+                                <i class="fab fa-google-play me-2"></i> 
+                                <span data-lang="en">Get it on Google Play</span>
+                                <span data-lang="my" style="display:none;">Google Play တွင် ရယူပါ</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <!-- Features Section -->
-            <section class="features" id="features">
-                <div class="container">
-                    <div class="row text-center mb-5">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="fw-bold">App Features</h2>
-                            <p class="lead text-muted">Discover what makes our app special</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 mb-4">
-                            <div class="feature-box bg-white">
-                                <div class="feature-icon">
-                                    <i class="fas fa-bolt"></i>
-                                </div>
-                                <h5>Lightning Fast</h5>
-                                <p>Our app is optimized for speed and performance.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
-                            <div class="feature-box bg-white">
-                                <div class="feature-icon">
-                                    <i class="fas fa-lock"></i>
-                                </div>
-                                <h5>Secure & Private</h5>
-                                <p>Your data is protected with industry-leading security.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
-                            <div class="feature-box bg-white">
-                                <div class="feature-icon">
-                                    <i class="fas fa-sync"></i>
-                                </div>
-                                <h5>Regular Updates</h5>
-                                <p>We constantly improve and add new features.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Call to Action -->
-            <section class="bg-dark text-white text-center py-5">
-                <div class="container">
-                    <h3>Ready to get started?</h3>
-                    <p class="lead mb-4">Download our app now and join thousands of satisfied users</p>
-                    <a href="#" class="btn btn-primary download-btn">
-                        <i class="fab fa-google-play me-2"></i> Download Now
-                    </a>
-                </div>
-            </section>
-        </div>
-
-        <!-- Terms Page Content -->
-        <div id="terms-content" style="display: none;">
-            <div class="container legal-content">
-                <h2 class="mb-4">Terms and Conditions</h2>
-                <div class="card p-4">
-                    <h4>1. Acceptance of Terms</h4>
-                    <p>By downloading, installing, or using the app, you agree to be bound by these Terms and Conditions. If you do not agree to these Terms, you should not use the app.</p>
-                    
-                    <h4>2. Use License</h4>
-                    <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the app for your personal, non-commercial purposes subject to these Terms.</p>
-                    
-                    <h4>3. Restrictions</h4>
-                    <p>You agree not to:</p>
-                    <ul>
-                        <li>Modify, adapt or hack the app</li>
-                        <li>Use the app for any illegal purpose</li>
-                        <li>Transmit viruses or other harmful code</li>
-                        <li>Attempt to gain unauthorized access to our systems</li>
-                    </ul>
-                    
-                    <h4>4. User Content</h4>
-                    <p>You retain ownership of any content you create or upload to the app. By submitting content, you grant us a worldwide, royalty-free license to use, reproduce, and display such content in connection with providing the service.</p>
-                    
-                    <h4>5. Termination</h4>
-                    <p>We may terminate or suspend your access to the app immediately, without prior notice or liability, for any breach of these Terms.</p>
-                    
-                    <h4>6. Changes to Terms</h4>
-                    <p>We reserve the right to update or change these Terms at any time. Your continued use of the app after we post modifications constitutes your acceptance of the revised Terms.</p>
-                    
-                    <h4>7. Contact Us</h4>
-                    <p>If you have any questions about these Terms, please contact us at support@appname.com</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Privacy Policy Content -->
-        <div id="policy-content" style="display: none;">
-            <div class="container legal-content">
-                <h2 class="mb-4">Privacy Policy</h2>
-                <div class="card p-4">
-                    <h4>1. Information We Collect</h4>
-                    <p>We may collect personal information that you provide directly to us, such as your name, email address, and other contact details when you register for an account.</p>
-                    
-                    <h4>2. How We Use Your Information</h4>
-                    <p>We use the information we collect to:</p>
-                    <ul>
-                        <li>Provide, maintain, and improve our services</li>
-                        <li>Process transactions and send related information</li>
-                        <li>Send you technical notices, updates, and support messages</li>
-                        <li>Respond to your comments and questions</li>
-                    </ul>
-                    
-                    <h4>3. Sharing of Information</h4>
-                    <p>We do not share your personal information with third parties except as described in this Privacy Policy:</p>
-                    <ul>
-                        <li>With vendors and service providers who need access to such information to carry out work on our behalf</li>
-                        <li>In response to a legal request if we believe disclosure is required by law</li>
-                        <li>To protect the rights, property, and safety of our users or others</li>
-                    </ul>
-                    
-                    <h4>4. Security</h4>
-                    <p>We take reasonable measures to help protect your personal information from loss, theft, misuse, and unauthorized access.</p>
-                    
-                    <h4>5. Your Choices</h4>
-                    <p>You may update, correct, or delete your account information at any time by logging into your account settings. You may also opt out of receiving promotional emails from us by following the instructions in those emails.</p>
-                    
-                    <h4>6. Changes to Privacy Policy</h4>
-                    <p>We may change this Privacy Policy from time to time. If we make changes, we will notify you by revising the date at the top of the policy.</p>
-                    
-                    <h4>7. Contact Us</h4>
-                    <p>If you have any questions about this Privacy Policy, please contact us at privacy@appname.com</p>
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="fw-bold">
+                            <span data-lang="en">App Features</span>
+                            <span data-lang="my" style="display:none;">အက်ပ်လုပ်ဆောင်ချက်များ</span>
+                        </h2>
+                        <p class="lead text-muted">
+                            <span data-lang="en">Discover what makes our app special</span>
+                            <span data-lang="my" style="display:none;">ကျွန်ုပ်တို့၏ အက်ပ်ကို အထူးဖြစ်စေသော အရာများကို လေ့လာပါ</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h5>
+                                <span data-lang="en">Lightning Fast</span>
+                                <span data-lang="my" style="display:none;">လျင်မြန်ပါသည်</span>
+                            </h5>
+                            <p>
+                                <span data-lang="en">Our app is optimized for speed and performance.</span>
+                                <span data-lang="my" style="display:none;">ကျွန်ုပ်တို့၏ အက်ပ်သည် အမြန်နှုန်းနှင့် စွမ်းဆောင်ရည်အတွက် ပိုမိုကောင်းမွန်အောင် ပြုလုပ်ထားပါသည်။</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h5>
+                                <span data-lang="en">Secure & Private</span>
+                                <span data-lang="my" style="display:none;">လုံခြုံပြီး ကိုယ်ပိုင်လုံခြုံမှုရှိပါသည်</span>
+                            </h5>
+                            <p>
+                                <span data-lang="en">Your data is protected with industry-leading security.</span>
+                                <span data-lang="my" style="display:none;">သင့်အချက်အလက်များကို စက်မှုလုပ်ငန်းဆိုင်ရာ ထိပ်တန်းလုံခြုံရေးဖြင့် ကာကွယ်ထားပါသည်။</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                            <h5>
+                                <span data-lang="en">Regular Updates</span>
+                                <span data-lang="my" style="display:none;">ပုံမှန် အပ်ဒိတ်များ</span>
+                            </h5>
+                            <p>
+                                <span data-lang="en">We constantly improve and add new features.</span>
+                                <span data-lang="my" style="display:none;">ကျွန်ုပ်တို့သည် အမြဲတိုးတက်စေပြီး လုပ်ဆောင်ချက်အသစ်များ ထည့်သွင်းပါသည်။</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-primary text-white text-center py-5">
+            <div class="container">
+                <h3>
+                    <span data-lang="en">Ready to get started?</span>
+                    <span data-lang="my" style="display:none;">စတင်ရန် အသင့်ဖြစ်နေပြီလား?</span>
+                </h3>
+                <p class="lead mb-4">
+                    <span data-lang="en">Download our app now and join thousands of satisfied users</span>
+                    <span data-lang="my" style="display:none;">ကျွန်ုပ်တို့၏ အက်ပ်ကို ယခုဒေါင်းလုဒ်လုပ်ပြီး စိတ်ကျေနပ်သော အသုံးပြုသူထောင်ပေါင်းများစွာနှင့် ပူးပေါင်းပါ</span>
+                </p>
+                <a href="#" class="btn btn-light text-primary download-btn">
+                    <i class="fab fa-google-play me-2"></i> 
+                    <span data-lang="en">Download Now</span>
+                    <span data-lang="my" style="display:none;">ယခု ဒေါင်းလုဒ်လုပ်ပါ</span>
+                </a>
+            </div>
+        </section>
     </div>
 
     <!-- Footer -->
@@ -251,20 +280,35 @@
             <div class="row">
                 <div class="col-md-6">
                     <h5>AppName</h5>
-                    <p>Making your life easier through technology.</p>
+                    <p>
+                        <span data-lang="en">Making your life easier through technology.</span>
+                        <span data-lang="my" style="display:none;">နည်းပညာဖြင့် သင့်ဘဝကို ပိုမိုလွယ်ကူစေပါသည်။</span>
+                    </p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#" class="text-white" id="footer-terms">Terms</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white" id="footer-policy">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white">Contact</a></li>
+                        <li class="list-inline-item"><a href="terms.html" class="text-white">
+                            <span data-lang="en">Terms</span>
+                            <span data-lang="my" style="display:none;">စည်းမျဉ်းများ</span>
+                        </a></li>
+                        <li class="list-inline-item"><a href="policy.html" class="text-white">
+                            <span data-lang="en">Privacy Policy</span>
+                            <span data-lang="my" style="display:none;">ကိုယ်ရေးအချက်အလက်မူဝါဒ</span>
+                        </a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">
+                            <span data-lang="en">Contact</span>
+                            <span data-lang="my" style="display:none;">ဆက်သွယ်ရန်</span>
+                        </a></li>
                     </ul>
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2025 AppName. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2025 AppName. 
+                        <span data-lang="en">All rights reserved.</span>
+                        <span data-lang="my" style="display:none;">မူပိုင်ခွင့်အားလုံး ရယူထားပါသည်။</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -273,72 +317,55 @@
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JavaScript for Navigation -->
+    <!-- Custom JavaScript -->
     <script>
-        // Navigation functions
-        function showHome() {
-            document.getElementById('home-content').style.display = 'block';
-            document.getElementById('terms-content').style.display = 'none';
-            document.getElementById('policy-content').style.display = 'none';
-            
-            // Update active nav
-            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-            document.getElementById('nav-home').classList.add('active');
-        }
+        // Language toggle
+        const langToggle = document.getElementById('lang-toggle');
+        let currentLang = 'en';
         
-        function showTerms() {
-            document.getElementById('home-content').style.display = 'none';
-            document.getElementById('terms-content').style.display = 'block';
-            document.getElementById('policy-content').style.display = 'none';
-            
-            // Update active nav
-            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-            document.getElementById('nav-terms').classList.add('active');
-        }
-        
-        function showPolicy() {
-            document.getElementById('home-content').style.display = 'none';
-            document.getElementById('terms-content').style.display = 'none';
-            document.getElementById('policy-content').style.display = 'block';
-            
-            // Update active nav
-            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-            document.getElementById('nav-policy').classList.add('active');
-        }
-        
-        // Event listeners
-        document.getElementById('nav-home').addEventListener('click', function(e) {
-            e.preventDefault();
-            showHome();
+        langToggle.addEventListener('click', function() {
+            if (currentLang === 'en') {
+                // Switch to Myanmar
+                document.querySelectorAll('[data-lang="en"]').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('[data-lang="my"]').forEach(el => el.style.display = 'inline-block');
+                currentLang = 'my';
+            } else {
+                // Switch to English
+                document.querySelectorAll('[data-lang="my"]').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('[data-lang="en"]').forEach(el => el.style.display = 'inline-block');
+                currentLang = 'en';
+            }
         });
         
-        document.getElementById('nav-terms').addEventListener('click', function(e) {
-            e.preventDefault();
-            showTerms();
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        let isDarkMode = false;
+        
+        themeToggle.addEventListener('click', function() {
+            if (isDarkMode) {
+                // Switch to light mode
+                document.documentElement.setAttribute('data-bs-theme', 'light');
+                themeToggle.classList.remove('fa-sun');
+                themeToggle.classList.add('fa-moon');
+                isDarkMode = false;
+            } else {
+                // Switch to dark mode
+                document.documentElement.setAttribute('data-bs-theme', 'dark');
+                themeToggle.classList.remove('fa-moon');
+                themeToggle.classList.add('fa-sun');
+                isDarkMode = true;
+            }
         });
         
-        document.getElementById('nav-policy').addEventListener('click', function(e) {
-            e.preventDefault();
-            showPolicy();
-        });
-        
-        document.getElementById('nav-features').addEventListener('click', function(e) {
-            e.preventDefault();
-            showHome();
-            // Scroll to features section
-            document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
-        });
-        
-        document.getElementById('footer-terms').addEventListener('click', function(e) {
-            e.preventDefault();
-            showTerms();
-            window.scrollTo(0, 0);
-        });
-        
-        document.getElementById('footer-policy').addEventListener('click', function(e) {
-            e.preventDefault();
-            showPolicy();
-            window.scrollTo(0, 0);
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
