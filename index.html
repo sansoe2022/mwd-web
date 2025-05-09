@@ -85,7 +85,7 @@
                         <a class="nav-link" href="#" id="nav-features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#terms-content" id="nav-terms">Terms</a>
+                        <a class="nav-link" href="https://mwdzay.netlify.app/#terms" id="nav-terms">Terms</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.mwdzay.com/privacy" id="nav-policy">Privacy Policy</a>
@@ -313,7 +313,7 @@
                 </div>
                 <div class="col-md-6 text-md-end">
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#terms-content" class="text-white" id="footer-terms">Terms</a></li>
+                        <li class="list-inline-item"><a href="https://mwdzay.netlify.app/#terms" class="text-white" id="footer-terms">Terms</a></li>
                         <li class="list-inline-item"><a href="https://www.mwdzay.com/privacy" class="text-white" id="footer-policy">Privacy Policy</a></li>
                         <li class="list-inline-item"><a href="#" class="text-white">Contact</a></li>
                     </ul>
@@ -361,6 +361,7 @@
                 policyContent.style.display = 'none';
                 document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
                 document.getElementById('nav-terms').classList.add('active');
+                window.scrollTo(0, 0); // Scroll to top when showing Terms
             } else {
                 console.error("One or more content elements not found");
             }
@@ -382,6 +383,16 @@
             }
         }
         
+        // Handle hash change for URL navigation
+        function handleHashChange() {
+            const hash = window.location.hash;
+            if (hash === '#terms') {
+                showTerms();
+            } else {
+                showHome();
+            }
+        }
+
         // Event listeners with error handling
         document.addEventListener('DOMContentLoaded', () => {
             const navHome = document.getElementById('nav-home');
@@ -402,6 +413,7 @@
                     } else {
                         console.error("navbarNav not found");
                     }
+                    window.location.hash = ''; // Remove hash
                 });
             } else {
                 console.error("nav-home not found");
@@ -422,6 +434,7 @@
                     } else {
                         console.error("navbarNav not found");
                     }
+                    window.location.hash = ''; // Remove hash
                 });
             } else {
                 console.error("nav-features not found");
@@ -438,6 +451,7 @@
                     } else {
                         console.error("navbarNav not found");
                     }
+                    window.location.href = 'https://mwdzay.netlify.app/#terms'; // Navigate to full URL
                 });
             } else {
                 console.error("nav-terms not found");
@@ -471,6 +485,7 @@
                     } else {
                         console.error("navbarNav not found");
                     }
+                    window.location.href = 'https://mwdzay.netlify.app/#terms'; // Navigate to full URL
                 });
             } else {
                 console.error("footer-terms not found");
@@ -492,6 +507,10 @@
             } else {
                 console.error("footer-policy not found");
             }
+
+            // Handle initial load and hash changes
+            window.addEventListener('hashchange', handleHashChange);
+            handleHashChange(); // Check hash on initial load
 
             // Initialize with Home content
             showHome();
