@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppName - Download Our App</title>
+    <title>MWD Zay - Download Our App</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -72,7 +72,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">AppName</a>
+            <a class="navbar-brand" href="index.html">MWD Zay</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -85,10 +85,10 @@
                         <a class="nav-link" href="#" id="nav-features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-terms">Terms</a>
+                        <a class="nav-link" href="https://www.mwdzay.com/terms" id="nav-terms">Terms</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-policy">Privacy Policy</a>
+                        <a class="nav-link" href="https://www.mwdzay.com/privacy" id="nav-policy">Privacy Policy</a>
                     </li>
                 </ul>
             </div>
@@ -104,10 +104,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
-                            <h1 class="display-4 fw-bold mb-4">Download Our Amazing App</h1>
+                            <h1 class="display-4 fw-bold mb-4">Download MWD Zay</h1>
                             <p class="lead mb-5">Experience the best features and boost your productivity with our innovative app.</p>
                             <div>
-                                <a href="#" class="btn btn-dark download-btn">
+                                <a href="https://play.google.com/store/apps/details?id=com.sksdev.mwdcalculator" class="btn btn-dark download-btn">
                                     <i class="fab fa-google-play me-2"></i> Get it on Google Play
                                 </a>
                             </div>
@@ -162,7 +162,7 @@
                 <div class="container">
                     <h3>Ready to get started?</h3>
                     <p class="lead mb-4">Download our app now and join thousands of satisfied users</p>
-                    <a href="#" class="btn btn-primary download-btn">
+                    <a href="https://play.google.com/store/apps/details?id=com.sksdev.mwdcalculator" class="btn btn-primary download-btn">
                         <i class="fab fa-google-play me-2"></i> Download Now
                     </a>
                 </div>
@@ -199,7 +199,7 @@
                     <p>We reserve the right to update or change these Terms at any time. Your continued use of the app after we post modifications constitutes your acceptance of the revised Terms.</p>
                     
                     <h4>7. Contact Us</h4>
-                    <p>If you have any questions about these Terms, please contact us at support@appname.com</p>
+                    <p>If you have any questions about these Terms, please contact us at support@mwdzay.com</p>
                 </div>
             </div>
         </div>
@@ -239,7 +239,7 @@
                     <p>We may change this Privacy Policy from time to time. If we make changes, we will notify you by revising the date at the top of the policy.</p>
                     
                     <h4>7. Contact Us</h4>
-                    <p>If you have any questions about this Privacy Policy, please contact us at privacy@appname.com</p>
+                    <p>If you have any questions about this Privacy Policy, please contact us at privacy@mwdzay.com</p>
                 </div>
             </div>
         </div>
@@ -250,13 +250,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>AppName</h5>
+                    <h5>MWD Zay</h5>
                     <p>Making your life easier through technology.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#" class="text-white" id="footer-terms">Terms</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white" id="footer-policy">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="https://www.mwdzay.com/terms" class="text-white" id="footer-terms">Terms</a></li>
+                        <li class="list-inline-item"><a href="https://www.mwdzay.com/privacy" class="text-white" id="footer-policy">Privacy Policy</a></li>
                         <li class="list-inline-item"><a href="#" class="text-white">Contact</a></li>
                     </ul>
                 </div>
@@ -264,7 +264,7 @@
             <hr>
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2025 AppName. All rights reserved.</p>
+                    <p class="mb-0">© 2025 MWD Zay. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -310,16 +310,12 @@
         document.getElementById('nav-home').addEventListener('click', function(e) {
             e.preventDefault();
             showHome();
-        });
-        
-        document.getElementById('nav-terms').addEventListener('click', function(e) {
-            e.preventDefault();
-            showTerms();
-        });
-        
-        document.getElementById('nav-policy').addEventListener('click', function(e) {
-            e.preventDefault();
-            showPolicy();
+            // Close the navbar
+            const navbarCollapse = document.getElementById('navbarNav');
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+            bsCollapse.hide();
         });
         
         document.getElementById('nav-features').addEventListener('click', function(e) {
@@ -327,18 +323,58 @@
             showHome();
             // Scroll to features section
             document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
+            // Close the navbar
+            const navbarCollapse = document.getElementById('navbarNav');
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+            bsCollapse.hide();
+        });
+        
+        document.getElementById('nav-terms').addEventListener('click', function(e) {
+            e.preventDefault();
+            showTerms();
+            // Close the navbar
+            const navbarCollapse = document.getElementById('navbarNav');
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+            bsCollapse.hide();
+        });
+        
+        document.getElementById('nav-policy').addEventListener('click', function(e) {
+            e.preventDefault();
+            showPolicy();
+            // Close the navbar
+            const navbarCollapse = document.getElementById('navbarNav');
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+            bsCollapse.hide();
         });
         
         document.getElementById('footer-terms').addEventListener('click', function(e) {
             e.preventDefault();
             showTerms();
             window.scrollTo(0, 0);
+            // Close the navbar
+            const navbarCollapse = document.getElementById('navbarNav');
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+            bsCollapse.hide();
         });
         
         document.getElementById('footer-policy').addEventListener('click', function(e) {
             e.preventDefault();
             showPolicy();
             window.scrollTo(0, 0);
+            // Close the navbar
+            const navbarCollapse = document.getElementById('navbarNav');
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+            bsCollapse.hide();
         });
     </script>
 </body>
