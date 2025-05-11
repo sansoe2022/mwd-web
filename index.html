@@ -32,21 +32,21 @@
         }
 
         .navbar .navbar-brand {
-            font-size: 1.5rem;
+            font-size: 1rem;
             font-weight: bold;
-            color: #3366ff;
+            color: #000000;
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
 
         .navbar .navbar-brand .nav-icon {
-            width: 1.8rem;
-            height: 1.8rem;
+            width: 3rem;
+            height: 3rem;
         }
 
         .navbar .navbar-nav .nav-link {
-            color: #3366ff;
+            color: #000000;
             margin-left: 1.5rem;
             font-weight: 500;
             transition: color 0.3s ease;
@@ -70,13 +70,20 @@
         }
 
         .hero-section {
-            color: white;
-            padding: 100px 0;
+           background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(100, 149, 237, 0.7), rgba(138, 43, 226, 0.7)); 
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* For Safari support */
+            color: #000000; /* White text for contrast */
+            padding: 30px 0; /* Increased padding for better spacing */
             text-align: center;
+            min-height: 400px; /* Ensure section is visible */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .features {
-            padding: 80px 0;
+            padding: 50px 0;
             background-color: #f8f9fa;
         }
         
@@ -169,11 +176,11 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="mb-4">
                                 <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/mwd_icon.png" alt="MWD Zay Icon" class="app-icon">
-                                <h2 class="display-6 mb-0" style="color: black;">MWD Zay</h2>
+                                <h2 class="fw-bold">MWD Zay</h2>
                             </div>
-                            <p class="lead mb-5" style="color: black;">A powerful app designed to enhance your productivity with advanced features and a user-friendly interface.</p>
+                            <p class="lead mb-5">Receive daily exchange rate updates</p>
                             <div>
-                                <a href="https://play.google.com/store/apps/details?id=com.sksdev.mwdcalculator" class="btn btn-dark download-btn">
+                                <a href="https://play.google.com/store/apps/details?id=com.sksdev.mwdcalculator" class="btn btn-light download-btn">
                                     <i class="fab fa-google-play me-2"></i> Get it on Google Play
                                 </a>
                             </div>
@@ -195,28 +202,28 @@
                         <div class="col-lg-4 mb-4">
                             <div class="feature-box bg-white">
                                 <div class="feature-icon">
-                                    <i class="fas fa-bolt"></i>
-                                </div>
-                                <h5>Lightning Fast</h5>
-                                <p>Our app is optimized for speed and performance.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
-                            <div class="feature-box bg-white">
-                                <div class="feature-icon">
-                                    <i class="fas fa-lock"></i>
-                                </div>
-                                <h5>Secure & Private</h5>
-                                <p>Your data is protected with industry-leading security.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
-                            <div class="feature-box bg-white">
-                                <div class="feature-icon">
                                     <i class="fas fa-sync"></i>
                                 </div>
-                                <h5>Regular Updates</h5>
-                                <p>We constantly improve and add new features.</p>
+                                <h5>Real-time update</h5>
+                                <p>Get real-time exchange rate updates</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="feature-box bg-white">
+                                <div class="feature-icon">
+<i class="fas fa-calculator"></i>
+
+                                </div>
+                                <h5>Exchange rate calculation</h5>
+                                <p>Calculate the exchange rate between THB and MMK</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="feature-box bg-white">
+                                <div class="feature-icon">
+      <i class="fa-solid fa-user-plus"></i>                                </div>
+                                <h5>Note Customer</h5>
+                                <p>You can note your customers list daily, monthly and yearly transactions</p>
                             </div>
                         </div>
                     </div>
