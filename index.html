@@ -61,6 +61,23 @@
             margin-left: 0;
         }
 
+        .language-switch {
+            margin-left: 1.5rem;
+            cursor: pointer;
+            font-weight: 500;
+            color: #000000;
+            display: flex;
+            align-items: center;
+        }
+
+        .language-switch:hover {
+            color: #1a44cc;
+        }
+
+        .language-switch i {
+            margin-right: 5px;
+        }
+
         .navbar-toggler {
             border: none;
         }
@@ -160,6 +177,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="https://mwdzay.netlify.app/#policy" id="nav-policy">Privacy Policy</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link language-switch" href="#" id="language-toggle">
+                            <i class="fas fa-globe"></i> <span id="current-language">English</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -176,12 +198,12 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="mb-4">
                                 <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/mwd_icon.png" alt="MWD Zay Icon" class="app-icon">
-                                <h2 class="fw-bold">MWD Zay</h2>
+                                <h2 class="fw-bold" id="hero-title">MWD Zay</h2>
                             </div>
-                            <p class="lead mb-5">Receive daily exchange rate updates</p>
+                            <p class="lead mb-5" id="hero-subtitle">Receive daily exchange rate updates</p>
                             <div>
                                 <a href="https://play.google.com/store/apps/details?id=com.sksdev.mwdcalculator" class="btn btn-light download-btn">
-                                    <i class="fab fa-google-play me-2"></i> Get it on Google Play
+                                    <i class="fab fa-google-play me-2"></i> <span id="download-text">Get it on Google Play</span>
                                 </a>
                             </div>
                         </div>
@@ -194,8 +216,8 @@
                 <div class="container">
                     <div class="row text-center mb-5">
                         <div class="col-lg-8 mx-auto">
-                            <h2 class="fw-bold">App Features</h2>
-                            <p class="lead text-muted">Discover what makes our app special</p>
+                            <h2 class="fw-bold" id="features-title">App Features</h2>
+                            <p class="lead text-muted" id="features-subtitle">Discover what makes our app special</p>
                         </div>
                     </div>
                     <div class="row">
@@ -204,26 +226,26 @@
                                 <div class="feature-icon">
                                     <i class="fas fa-sync"></i>
                                 </div>
-                                <h5>Real-time update</h5>
-                                <p>Get real-time exchange rate updates</p>
+                                <h5 id="feature1-title">Real-time update</h5>
+                                <p id="feature1-desc">Get real-time exchange rate updates</p>
                             </div>
                         </div>
                         <div class="col-lg-4 mb-4">
                             <div class="feature-box bg-white">
                                 <div class="feature-icon">
-<i class="fas fa-calculator"></i>
-
+                                    <i class="fas fa-calculator"></i>
                                 </div>
-                                <h5>Exchange rate calculation</h5>
-                                <p>Calculate the exchange rate between THB and MMK</p>
+                                <h5 id="feature2-title">Exchange rate calculation</h5>
+                                <p id="feature2-desc">Calculate the exchange rate between THB and MMK</p>
                             </div>
                         </div>
                         <div class="col-lg-4 mb-4">
                             <div class="feature-box bg-white">
                                 <div class="feature-icon">
-      <i class="fa-solid fa-user-plus"></i>                                </div>
-                                <h5>Note Customer</h5>
-                                <p>You can note your customers list daily, monthly and yearly transactions</p>
+                                    <i class="fa-solid fa-user-plus"></i>
+                                </div>
+                                <h5 id="feature3-title">Note Customer</h5>
+                                <p id="feature3-desc">You can note your customers list daily, monthly and yearly transactions</p>
                             </div>
                         </div>
                     </div>
@@ -233,10 +255,10 @@
             <!-- Call to Action -->
             <section class="bg-dark text-white text-center py-5">
                 <div class="container">
-                    <h3>Ready to get started?</h3>
-                    <p class="lead mb-4">Download our app now and join thousands of satisfied users</p>
+                    <h3 id="cta-title">Ready to get started?</h3>
+                    <p class="lead mb-4" id="cta-subtitle">Download our app now and join thousands of satisfied users</p>
                     <a href="https://play.google.com/store/apps/details?id=com.sksdev.mwdcalculator" class="btn btn-primary download-btn">
-                        <i class="fab fa-google-play me-2"></i> Download Now
+                        <i class="fab fa-google-play me-2"></i> <span id="cta-button">Download Now</span>
                     </a>
                 </div>
             </section>
@@ -245,7 +267,7 @@
         <!-- Terms Page Content -->
         <div id="terms-content" style="display: none;">
             <div class="container legal-content">
-                <h2 class="mb-4">Terms and Conditions</h2>
+                <h2 class="mb-4" id="terms-title">Terms and Conditions</h2>
                 <div id="terms-text" class="card p-4"></div>
             </div>
         </div>
@@ -253,7 +275,7 @@
         <!-- Privacy Policy Content -->
         <div id="policy-content" style="display: none;">
             <div class="container legal-content">
-                <h2 class="mb-4">Privacy Policy</h2>
+                <h2 class="mb-4" id="policy-title">Privacy Policy</h2>
                 <div id="policy-text" class="card p-4"></div>
             </div>
         </div>
@@ -265,20 +287,20 @@
             <div class="row">
                 <div class="col-md-6">
                     <h5>MWD Zay</h5>
-                    <p>Making your life easier through technology.</p>
+                    <p id="footer-slogan">Making your life easier through technology.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="https://mwdzay.netlify.app/#terms" class="text-white" id="footer-terms">Terms</a></li>
-                        <li class="list-inline-item"><a href="https://mwdzay.netlify.app/#policy" class="text-white" id="footer-policy">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white">Contact</a></li>
+                        <li class="list-inline-item"><a href="https://mwdzay.netlify.app/#terms" class="text-white" id="footer-terms"><span id="footer-terms-text">Terms</span></a></li>
+                        <li class="list-inline-item"><a href="https://mwdzay.netlify.app/#policy" class="text-white" id="footer-policy"><span id="footer-policy-text">Privacy Policy</span></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><span id="footer-contact-text">Contact</span></a></li>
                     </ul>
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="mb-0">© 2025 MWD Zay. All rights reserved.</p>
+                    <p class="mb-0" id="footer-copyright">© 2025 MWD Zay. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -289,6 +311,112 @@
     
     <!-- Custom JavaScript for Navigation, Fetching Content, and Scroll Effect -->
     <script>
+        // Language translations
+        const translations = {
+            english: {
+                // Navigation
+                'nav-home': 'Home',
+                'nav-features': 'Features',
+                'nav-terms': 'Terms',
+                'nav-policy': 'Privacy Policy',
+                'current-language': 'English',
+                
+                // Hero Section
+                'hero-title': 'MWD Zay',
+                'hero-subtitle': 'Receive daily exchange rate updates',
+                'download-text': 'Get it on Google Play',
+                
+                // Features Section
+                'features-title': 'App Features',
+                'features-subtitle': 'Discover what makes our app special',
+                'feature1-title': 'Real-time update',
+                'feature1-desc': 'Get real-time exchange rate updates',
+                'feature2-title': 'Exchange rate calculation',
+                'feature2-desc': 'Calculate the exchange rate between THB and MMK',
+                'feature3-title': 'Note Customer',
+                'feature3-desc': 'You can note your customers list daily, monthly and yearly transactions',
+                
+                // Call to Action
+                'cta-title': 'Ready to get started?',
+                'cta-subtitle': 'Download our app now and join thousands of satisfied users',
+                'cta-button': 'Download Now',
+                
+                // Terms and Policy
+                'terms-title': 'Terms and Conditions',
+                'policy-title': 'Privacy Policy',
+                
+                // Footer
+                'footer-slogan': 'Making your life easier through technology.',
+                'footer-terms-text': 'Terms',
+                'footer-policy-text': 'Privacy Policy',
+                'footer-contact-text': 'Contact',
+                'footer-copyright': '© 2025 MWD Zay. All rights reserved.'
+            },
+            myanmar: {
+                // Navigation
+                'nav-home': 'ပင်မစာမျက်နှာ',
+                'nav-features': 'အင်္ဂါရပ်များ',
+                'nav-terms': 'စည်းမျဉ်းများ',
+                'nav-policy': 'ကိုယ်ရေးအချက်အလက်မူဝါဒ',
+                'current-language': 'မြန်မာ',
+                
+                // Hero Section
+                'hero-title': 'MWD ဇေး',
+                'hero-subtitle': 'နေ့စဉ် ငွေလဲနှုန်း အပ်ဒိတ်များ ရယူပါ',
+                'download-text': 'Google Play တွင် ရယူပါ',
+                
+                // Features Section
+                'features-title': 'အက်ပ်၏ အင်္ဂါရပ်များ',
+                'features-subtitle': 'ကျွန်ုပ်တို့၏အက်ပ်ကို အထူးပြုစေသော အရာများကို ရှာဖွေလေ့လာပါ',
+                'feature1-title': 'အချိန်နှင့်တပြေးညီ အပ်ဒိတ်',
+                'feature1-desc': 'အချိန်နှင့်တပြေးညီ ငွေလဲနှုန်း အပ်ဒိတ်များ ရယူပါ',
+                'feature2-title': 'ငွေလဲနှုန်းတွက်ချက်မှု',
+                'feature2-desc': 'THB နှင့် MMK အကြား ငွေလဲနှုန်းကို တွက်ချက်ပါ',
+                'feature3-title': 'ဖောက်သည်မှတ်စု',
+                'feature3-desc': 'သင့်ဖောက်သည်စာရင်း၊ နေ့စဉ်၊ လစဉ်နှင့် နှစ်စဉ် ငွေလွှဲမှုများကို မှတ်စုရေးနိုင်သည်',
+                
+                // Call to Action
+                'cta-title': 'စတင်ရန် အသင့်ဖြစ်ပြီလား?',
+                'cta-subtitle': 'ကျွန်ုပ်တို့၏အက်ပ်ကို ယခုပင်ဒေါင်းလုဒ်လုပ်၍ စိတ်ကျေနပ်မှုရှိသော အသုံးပြုသူထောင်ပေါင်းများစွာနှင့် ပါဝင်လိုက်ပါ',
+                'cta-button': 'ယခုဒေါင်းလုဒ်လုပ်ရန်',
+                
+                // Terms and Policy
+                'terms-title': 'စည်းမျဉ်းများနှင့် သတ်မှတ်ချက်များ',
+                'policy-title': 'ကိုယ်ရေးအချက်အလက်မူဝါဒ',
+                
+                // Footer
+                'footer-slogan': 'နည်းပညာဖြင့် သင့်ဘဝကို ပိုမိုလွယ်ကူစေခြင်း။',
+                'footer-terms-text': 'စည်းမျဉ်းများ',
+                'footer-policy-text': 'ကိုယ်ရေးအချက်အလက်မူဝါဒ',
+                'footer-contact-text': 'ဆက်သွယ်ရန်',
+                'footer-copyright': '© 2025 MWD ဇေး။ မူပိုင်ခွင့်အားလုံး ရယူထားပြီးဖြစ်သည်။'
+            }
+        };
+
+        // Function to update text content based on language
+        function updateLanguage(language) {
+            // Save language preference to local storage
+            localStorage.setItem('mwdZayLanguage', language);
+            
+            // Get the appropriate translation object
+            const texts = translations[language];
+            
+            // Update all text content
+            for (const [id, text] of Object.entries(texts)) {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.textContent = text;
+                }
+            }
+            
+            // Update navigation items
+            document.getElementById('nav-home').textContent = texts['nav-home'];
+            document.getElementById('nav-features').textContent = texts['nav-features'];
+            document.getElementById('nav-terms').textContent = texts['nav-terms'];
+            document.getElementById('nav-policy').textContent = texts['nav-policy'];
+            document.getElementById('current-language').textContent = texts['current-language'];
+        }
+
         // Navigation functions
         function showHome() {
             console.log("Showing Home");
@@ -413,6 +541,11 @@
             const navPolicy = document.getElementById('nav-policy');
             const footerTerms = document.getElementById('footer-terms');
             const footerPolicy = document.getElementById('footer-policy');
+            const languageToggle = document.getElementById('language-toggle');
+
+            // Check for saved language preference
+            const savedLanguage = localStorage.getItem('mwdZayLanguage') || 'english';
+            updateLanguage(savedLanguage);
 
             // Function to collapse navbar
             const collapseNavbar = () => {
@@ -495,6 +628,20 @@
                 });
             } else {
                 console.error("footer-policy not found");
+            }
+
+            // Language toggle functionality
+            if (languageToggle) {
+                languageToggle.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    // Toggle between languages
+                    const currentLanguage = document.getElementById('current-language').textContent;
+                    const newLanguage = currentLanguage === 'English' ? 'myanmar' : 'english';
+                    updateLanguage(newLanguage);
+                    collapseNavbar();
+                });
+            } else {
+                console.error("language-toggle not found");
             }
 
             // Handle initial load and hash changes
