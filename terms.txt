@@ -1,7 +1,7 @@
 <p><strong>Last Updated:</strong> May 12, 2025</p>
 
   <h2>1. Introduction</h2>
-  <p>Welcome to MWD Zay ("the App"), provided by San Soe ("we", "our", or "us"). These Terms of Service ("Terms") govern your use of the MWD Zay mobile application, available to users in Thailand and Myanmar.</p>
+  <div>Welcome to MWD Zay ("the App"), provided by San Soe. These Terms of Service govern your use of the MWD Zay mobile application, available to users in Thailand and Myanmar.</div>
   <p>By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you may not use the App.</p>
 
   <h2>2. Privacy Policy</h2>
@@ -50,3 +50,4 @@
 
   <h2>13. Contact Information</h2>
   <p>If you have any questions or concerns about these Terms, please contact us at: <a href="mailto:photphot901@gmail.com">photphot901@gmail.com</a></p>
+<p>Website: <a href="https://mwdzay.netlify.app/">mwdzay.netlify.app</a></p>
