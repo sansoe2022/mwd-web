@@ -495,7 +495,7 @@
                 .then(text => {
                     const termsTextDiv = document.getElementById('terms-text');
                     if (termsTextDiv) {
-                        termsTextDiv.innerHTML = text.replace(/\n/g, '<br>');
+                        termsTextDiv.innerHTML = text;
                     } else {
                         console.error("terms-text div not found");
                     }
@@ -515,7 +515,7 @@
                 .then(text => {
                     const policyTextDiv = document.getElementById('policy-text');
                     if (policyTextDiv) {
-                        policyTextDiv.innerHTML = text.replace(/\n/g, '<br>');
+                        policyTextDiv.innerHTML = text;
                     } else {
                         console.error("policy-text div not found");
                     }
