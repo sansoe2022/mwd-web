@@ -485,7 +485,7 @@
 
         // Fetch Terms content
         function fetchTerms() {
-            fetch('https://raw.githubusercontent.com/sansoe2022/mwd-web/main/terms.txt')
+            fetch('https://mwdzay.netlify.app/terms.txt')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
@@ -505,7 +505,7 @@
 
         // Fetch Privacy Policy content
         function fetchPolicy() {
-            fetch('https://raw.githubusercontent.com/sansoe2022/mwd-web/main/policy.txt')
+            fetch('https://mwdzay.netlify.app/policy.txt')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
