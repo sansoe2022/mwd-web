@@ -1,20 +1,20 @@
 <p><strong>Last Updated:</strong> May 12, 2025</p>
 
-<h2>1. Introduction</h2>
+<h2>Introduction</h2>
 Welcome to MWD Zay, provided by San Kyaw Soe. These Terms of Service govern your use of the MWD Zay mobile application, available to users in Thailand and Myanmar.
 
 <p>By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you may not use the App.</p>
 
-<h2>2. Privacy Policy</h2>
+<h2>Privacy Policy</h2>
 <p>Our Privacy Policy explains how we handle any information you provide when using the App. You can review our Privacy Policy here: <a href="https://mwdzay.netlify.app/#policy" target="_blank">https://mwdzay.netlify.app/#policy</a></p>
 
-<h2>3. No Account Required & Data Collection</h2>
+<h2>No Account Required & Data Collection</h2>
 <p>MWD Zay does not require you to create an account to use any features. We do not collect personal data from users. Any usage data collected via analytics is anonymized and cannot be used to identify you.</p>
 
-<h2>4. Description of Service</h2>
+<h2>Description of Service</h2>
 <p>MWD Zay is a converter tool designed to calculate exchange rates between various currencies. The App provides real-time or near real-time currency conversion based on publicly available rate sources.</p>
 
-<h2>5. Third-Party Services</h2>
+<h2>Third-Party Services</h2>
 <p>The App integrates the following third-party services:</p>
 <ul>
   <li>OneSignal – for delivering push notifications.</li>
@@ -23,10 +23,10 @@ Welcome to MWD Zay, provided by San Kyaw Soe. These Terms of Service govern your
 </ul>
 <p>Your use of these services is subject to their respective terms and privacy policies. We do not control OneSignal, AdMob, or Firebase Analytics, and we are not responsible for their practices.</p>
 
-<h2>6. Intellectual Property</h2>
+<h2>Intellectual Property</h2>
 <p>All intellectual property rights in the App, including its design, features, and content, are owned by us or our licensors. You may not reproduce, modify, distribute, or create derivative works without our express written permission.</p>
 
-<h2>7. Prohibited Conduct</h2>
+<h2>Prohibited Conduct</h2>
 <p>When using the App, you agree not to:</p>
 <ul>
   <li>Reverse engineer, decompile, or disassemble the App.</li>
@@ -34,21 +34,21 @@ Welcome to MWD Zay, provided by San Kyaw Soe. These Terms of Service govern your
   <li>Interfere with or disrupt the integrity of the App or its data.</li>
 </ul>
 
-<h2>8. Disclaimer of Warranties</h2>
+<h2>Disclaimer of Warranties</h2>
 <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis. To the fullest extent permitted by law, we disclaim all warranties, express or implied, including but not limited to merchantability, fitness for a particular purpose, and non-infringement.</p>
 
-<h2>9. Limitation of Liability</h2>
+<h2>Limitation of Liability</h2>
 <p>To the maximum extent permitted by applicable law, we will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.</p>
 
-<h2>10. Indemnification</h2>
+<h2>Indemnification</h2>
 <p>You agree to indemnify and hold us harmless from any claims, losses, liabilities, damages, costs, or expenses (including attorneys' fees) arising out of your violation of these Terms or your use of the App.</p>
 
-<h2>11. Changes to Terms</h2>
+<h2>Changes to Terms</h2>
 <p>We may modify these Terms at any time. We will notify you of any changes by posting the new Terms on this page or within the App. Your continued use after changes constitutes acceptance.</p>
 
-<h2>12. Governing Law and Jurisdiction</h2>
+<h2>Governing Law and Jurisdiction</h2>
 <p>These Terms are governed by and construed in accordance with the laws of Thailand, without regard to its conflict of law principles. Any dispute arising under or relating to these Terms shall be subject to the exclusive jurisdiction of the courts of Thailand.</p>
 
-<h2>13. Contact Information</h2>
+<h2>Contact Information</h2>
 <p>If you have any questions or concerns about these Terms, please contact us at: <a href="mailto:photphot901@gmail.com">photphot901@gmail.com</a></p>
 <p>Website: <a href="https://mwdzay.netlify.app/">https://mwdzay.netlify.app</a></p>
