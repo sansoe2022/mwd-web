@@ -1,7 +1,7 @@
 <p><strong>Last Updated:</strong> May 12, 2025</p>
 
-<a>1. Introduction</a>
-<span>Welcome to MWD Zay, provided by San Kyaw Soe. These Terms of Service govern your use of the MWD Zay mobile application, available to users in Thailand and Myanmar.</span>
+<h2>1. Introduction</h2>
+Welcome to MWD Zay, provided by San Kyaw Soe. These Terms of Service govern your use of the MWD Zay mobile application, available to users in Thailand and Myanmar.
 
 <p>By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you may not use the App.</p>
 
