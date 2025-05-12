@@ -1,13 +1,13 @@
 <p><strong>Last Updated:</strong> May 12, 2025</p>
 
-  <h2>1. Introduction</h2>
+  <h2>Introduction</h2>
   <p>MWD Zay is developed and maintained by San Kyaw Soe. This Privacy Policy explains how we handle information in relation to your use of the App, which is available for users in Thailand and Myanmar.</p>
   <p>By using the App, you agree to the practices described in this policy.</p>
 
-  <h2>2. No Personal Data Collection</h2>
+  <h2>No Personal Data Collection</h2>
   <p>We do not collect, store, or share any personally identifiable information. You do not need to create an account or log in to use MWD Zay. All features are accessible without user registration.</p>
 
-  <h2>3. Automatically Collected Information</h2>
+  <h2>Automatically Collected Information</h2>
   <p>Although we do not collect personal data directly, the App uses third-party services that may collect anonymized information for analytics and advertising purposes. These services include:</p>
   <ul>
     <li>Google Firebase Analytics</li>
@@ -16,7 +16,7 @@
   </ul>
   <p>These services may collect non-personally identifiable data such as device type, usage frequency, app crashes, and interaction with ads. This data helps us improve the functionality and user experience of the App.</p>
 
-  <h2>4. Third-Party Services</h2>
+  <h2>Third-Party Services</h2>
   <p>Each third-party service integrated into the App has its own privacy policy. We encourage you to review their policies:</p>
   <ul>
     <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase Privacy Policy</a></li>
@@ -24,15 +24,15 @@
     <li><a href="https://onesignal.com/privacy_policy" target="_blank">OneSignal Privacy Policy</a></li>
   </ul>
 
-  <h2>5. Children’s Privacy</h2>
+  <h2>Children’s Privacy</h2>
   <p>MWD Zay is not directed to children under the age of 13. We do not knowingly collect any data from children. If you believe a child has provided us with personal data, please contact us and we will delete it.</p>
 
-  <h2>6. Data Security</h2>
+  <h2>Data Security</h2>
   <p>We are committed to protecting the integrity and confidentiality of any information managed by our App. While we do not store user data, we ensure that our app and integrated services follow industry best practices to secure communications and analytics.</p>
 
-  <h2>7. Changes to This Privacy Policy</h2>
+  <h2>Changes to This Privacy Policy</h2>
   <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page. Continued use of the App after changes means you accept the updated policy.</p>
 
-  <h2>8. Contact Us</h2>
+  <h2>Contact Us</h2>
   <p>If you have any questions about this Privacy Policy, feel free to contact us at: <a href="mailto:photphot901@gmail.com">photphot901@gmail.com</a></p>
 <p>Website: <a href="https://mwdzay.netlify.app/">https://mwdzay.netlify.app</a></p>
