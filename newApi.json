@@ -1,6 +1,6 @@
 {
-  "thRate": 730,
-  "mmRate": 700,
+  "thRate": 715,
+  "mmRate": 690,
   "versionCode": 5,
   "title": "Update available",
   "message": "ဗားရှင်းအသစ်သို့ အပ်ဒိတ်လုပ်ပေးပါ။",
@@ -15,7 +15,7 @@
   },
   "support": {
     "title": "အကူအညီ",
-    "message": "ငွေလွှဲရန် Admin ကို ဆက်သွယ်ပါ။",
+    "message": "Admin ကို ဆက်သွယ်ပါ။",
     "contacts": [
       {
         "platform": "facebook",
