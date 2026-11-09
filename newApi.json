@@ -52,15 +52,6 @@
         "platform": "line",
         "icon": "line",
         "iconUrl": ""
-      },
-      {
-        "id": "tiktok",
-        "enabled": true,
-        "label": "TikTok",
-        "url": "https://www.tiktok.com/@sansoe2021?_r=1&_t=ZS-9BGFF35LKTs",
-        "platform": "tiktok",
-        "icon": "tiktok",
-        "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Qk_IE0HD4FNJbTPQ7y46EF1TVCzFvM38cwAFMQ10fIh_xTQu-CCn_kfc&s=10"
       }
     ]
   }
