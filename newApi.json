@@ -1,6 +1,6 @@
 {
-  "thRate": 715,
-  "mmRate": 690,
+  "thRate": 730,
+  "mmRate": 705,
   "versionCode": 5,
   "title": "Update available",
   "message": "ဗားရှင်းအသစ်သို့ အပ်ဒိတ်လုပ်ပေးပါ။",
@@ -18,24 +18,49 @@
     "message": "Admin ကို ဆက်သွယ်ပါ။",
     "contacts": [
       {
-        "platform": "facebook",
+        "id": "facebook",
+        "enabled": true,
         "label": "Facebook",
-        "url": "https://www.facebook.com/share/1aC4MWzEQk/"
+        "url": "https://www.facebook.com/share/1aC4MWzEQk/",
+        "platform": "facebook",
+        "icon": "facebook",
+        "iconUrl": ""
       },
       {
-        "platform": "messenger",
+        "id": "messenger",
+        "enabled": true,
         "label": "Messenger",
-        "url": "https://m.me/sansoe2021"
+        "url": "https://m.me/sansoe2021",
+        "platform": "messenger",
+        "icon": "messenger",
+        "iconUrl": ""
       },
       {
-        "platform": "telegram",
+        "id": "telegram",
+        "enabled": true,
         "label": "Telegram",
-        "url": "https://t.me/sansoe2021"
+        "url": "https://t.me/sansoe2021",
+        "platform": "telegram",
+        "icon": "telegram",
+        "iconUrl": ""
       },
       {
-        "platform": "line",
+        "id": "line",
+        "enabled": true,
         "label": "Line",
-        "url": "https://line.me/ti/p/Y9N3qqio-r"
+        "url": "https://line.me/ti/p/Y9N3qqio-r",
+        "platform": "line",
+        "icon": "line",
+        "iconUrl": ""
+      },
+      {
+        "id": "tiktok",
+        "enabled": true,
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@sansoe2021?_r=1&_t=ZS-9BGFF35LKTs",
+        "platform": "tiktok",
+        "icon": "tiktok",
+        "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Qk_IE0HD4FNJbTPQ7y46EF1TVCzFvM38cwAFMQ10fIh_xTQu-CCn_kfc&s=10"
       }
     ]
   }
