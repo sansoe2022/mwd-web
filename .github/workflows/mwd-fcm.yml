@@ -1,0 +1,111 @@
+# MWD FCM sender v1 | Firebase project: mwdzay
+name: MWD Firebase notification
+run-name: MWD notification · ${{ inputs.request_id }}
+on:
+  workflow_dispatch:
+    inputs:
+      payload_b64:
+        description: Base64-encoded FCM message
+        required: true
+        type: string
+      request_id:
+        description: Admin console request ID
+        required: true
+        type: string
+permissions: {}
+jobs:
+  send:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Send notification through FCM HTTP v1
+        env:
+          SA_JSON: ${{ secrets.MWD_FIREBASE_SERVICE_ACCOUNT }}
+          PAYLOAD_B64: ${{ inputs.payload_b64 }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          """MWD FCM sender v1: executed by the generated GitHub Actions workflow."""
+          import base64, json, os, re, subprocess, tempfile, time, urllib.request, urllib.error
+          
+          def validate_message(m):
+              if not isinstance(m, dict) or set(m) - {'topic', 'token', 'notification', 'android'}:
+                  raise ValueError('Invalid message shape')
+              if ('topic' in m) == ('token' in m):
+                  raise ValueError('Choose one target')
+              if 'topic' in m and not re.fullmatch(r'[a-zA-Z0-9\-_.~%]{1,900}', m['topic']):
+                  raise ValueError('Invalid topic')
+              if 'token' in m and (not isinstance(m['token'], str) or not 20 <= len(m['token']) <= 4096):
+                  raise ValueError('Invalid device token')
+              n = m.get('notification')
+              if not isinstance(n, dict) or set(n) != {'title', 'body'} or not all(isinstance(n[k], str) and n[k].strip() for k in n):
+                  raise ValueError('Title and body required')
+              if len(n['title']) > 120 or len(n['body']) > 1000:
+                  raise ValueError('Message too long')
+              if m.get('android') != {'priority': 'HIGH', 'notification': {'channel_id': 'rates', 'sound': 'default'}}:
+                  raise ValueError('Invalid Android notification settings')
+              # FCM topic payloads have a 2048-byte limit; device messages have 4096.
+              if len(json.dumps(m, ensure_ascii=False, separators=(',', ':')).encode()) > (2048 if 'topic' in m else 4096):
+                  raise ValueError('FCM payload too large')
+              return m
+          
+          def post_json(url, data, bearer=None, form=False):
+              headers = {'Content-Type': 'application/x-www-form-urlencoded' if form else 'application/json'}
+              if bearer:
+                  headers['Authorization'] = 'Bearer ' + bearer
+              body = data.encode() if form else json.dumps(data).encode()
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url, body, headers), timeout=40) as r:
+                      return json.load(r)
+              except urllib.error.HTTPError as e:
+                  # Do not print Google's response: it can echo registration tokens or credentials.
+                  raise RuntimeError('Google API HTTP ' + str(e.code) + '; check FCM API, service-account role, project and target.') from None
+          
+          def run():
+              from urllib.parse import urlencode
+              raw = os.environ['PAYLOAD_B64']
+              if len(raw) > 12000:
+                  raise ValueError('Payload too large')
+              message = validate_message(json.loads(base64.b64decode(raw, validate=True)))
+              account = json.loads(os.environ['SA_JSON'])
+              project = account['project_id']
+              if account.get('type') != 'service_account' or not re.fullmatch(r'[a-z][a-z0-9-]{4,62}', project):
+                  raise ValueError('Invalid service-account project')
+              if project != 'mwdzay':
+                  raise ValueError('This sender is configured for the MWD Zay Firebase project: mwdzay')
+              def b64(data):
+                  return base64.urlsafe_b64encode(data).rstrip(b'=')
+              now = int(time.time())
+              claims = {'iss': account['client_email'], 'scope': 'https://www.googleapis.com/auth/firebase.messaging',
+                        'aud': 'https://oauth2.googleapis.com/token', 'iat': now, 'exp': now + 3300}
+              unsigned = b64(b'{"alg":"RS256","typ":"JWT"}') + b'.' + b64(json.dumps(claims, separators=(',', ':')).encode())
+              with tempfile.TemporaryDirectory() as temp:
+                  path = os.path.join(temp, 'key.pem')
+                  fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+                  with os.fdopen(fd, 'w') as f:
+                      f.write(account['private_key'])
+                  signed = subprocess.run(['openssl', 'dgst', '-sha256', '-sign', path], input=unsigned, capture_output=True)
+                  if signed.returncode:
+                      raise RuntimeError('Unable to sign with the imported private key')
+              jwt = (unsigned + b'.' + b64(signed.stdout)).decode()
+              access = post_json('https://oauth2.googleapis.com/token', urlencode({'grant_type': 'urn:ietf:params:oauth:grant-type:jwt-bearer', 'assertion': jwt}), form=True)['access_token']
+              print('::add-mask::' + access)
+              result = post_json('https://fcm.googleapis.com/v1/projects/' + project + '/messages:send', {'message': message}, access)
+              name = result.get('name', '')
+              if not re.fullmatch(r'projects/[a-z0-9-]+/messages/[a-zA-Z0-9%:._-]+', name):
+                  raise RuntimeError('Unexpected FCM response')
+              print('FCM accepted the message: ' + name)
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+                  f.write('### Notification accepted by FCM\n\n`' + name + '`\n\nAcceptance is not a device delivery or read receipt.\n')
+          
+          if __name__ == '__main__':
+              try:
+                  run()
+              except Exception as e:
+                  # Only fixed validation/error messages are exposed; JSON parser details may contain user data.
+                  if isinstance(e, (ValueError, RuntimeError)) and type(e) in (ValueError, RuntimeError):
+                      print('::error::' + str(e))
+                  else:
+                      print('::error::Sender failed. Check service-account format, network, FCM API and permissions.')
+                  raise SystemExit(1)
+          PY
