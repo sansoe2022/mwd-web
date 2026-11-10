@@ -52,6 +52,15 @@
         "platform": "line",
         "icon": "line",
         "iconUrl": ""
+      },
+      {
+        "id": "contact-1794272236061",
+        "enabled": true,
+        "label": "Website",
+        "url": "https://mwdzay.netlify.app/",
+        "platform": "website",
+        "icon": "website",
+        "iconUrl": ""
       }
     ]
   }
