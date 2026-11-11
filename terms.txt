@@ -1,54 +1,57 @@
-<p><strong>Last Updated:</strong> May 12, 2025</p>
+<!-- MWD Zay · terms · မြန်မာနှင့် English စာသားကို သက်ဆိုင်ရာ section ထဲတွင် ပြင်နိုင်ပါသည်။ -->
 
-<h2>Introduction</h2>
-Welcome to MWD Zay, provided by San Kyaw Soe. These Terms of Service govern your use of the MWD Zay mobile application, available to users in Thailand and Myanmar.
+<section data-language="my" lang="my">
+<p class="legal-date"><strong>နောက်ဆုံးပြင်ဆင်သည့်ရက် — ၂၀၂၆ နိုဝင်ဘာ ၁၁</strong></p>
+<h2>ဤစည်းကမ်းချက်များအကြောင်း</h2>
+<p>MWD Zay ကို ထိုင်းဘတ် (THB) နှင့် မြန်မာကျပ် (MMK) အသုံးပြုသူများအတွက် San Soe က စီမံပံ့ပိုးထားပါသည်။ ဤစည်းကမ်းချက်များသည် Android app နှင့် ၎င်းနှင့်ဆက်စပ်သော အွန်လိုင်းဝန်ဆောင်မှုများအပေါ် အကျုံးဝင်ပါသည်။ အသုံးမပြုမီ ဖတ်ရှုပါ။ သဘောမတူပါက app ကို အသုံးမပြုပါနှင့်။</p>
+<h2>ဝန်ဆောင်မှု၏ အတိုင်းအတာ</h2>
+<p>App တွင် ငွေလဲနှုန်းတွက်ချက်ခြင်း၊ ထုတ်ပြန်ထားသော နှုန်းမှတ်တမ်းများကြည့်ခြင်း၊ ဖောက်သည်နှင့် ငွေလွှဲမှတ်တမ်းသိမ်းခြင်း၊ ပြေစာပုံတွဲခြင်း၊ အသိပေးချက်များရယူခြင်းနှင့် ဘဏ်ကတ်ပုံဖန်တီးခြင်းတို့ ပါဝင်ပါသည်။ MWD Zay သည် တွက်ချက်ရေးနှင့် မှတ်တမ်းတင်ရေးကိရိယာဖြစ်ပြီး ငွေလက်ခံထိန်းသိမ်းခြင်း၊ ဘဏ်ငွေလွှဲလုပ်ဆောင်ခြင်း သို့မဟုတ် ရင်းနှီးမြှုပ်နှံမှုအကြံပေးခြင်းကို ကိုယ်တိုင်မဆောင်ရွက်ပါ။ App ထဲတွင် မှတ်တမ်းထည့်ထားခြင်းသည် အမှန်တကယ်ငွေပေးချေပြီးကြောင်း အတည်ပြုချက်မဟုတ်ပါ။</p>
+<h2>နှုန်းထားနှင့် တွက်ချက်မှုကို စစ်ဆေးရန်</h2>
+<p>ထုတ်ပြန်ထားသောနှုန်း၊ ကိုယ်ပိုင်နှုန်း၊ ဝန်ဆောင်ခ၊ ပမာဏသတ်မှတ်ချက်နှင့် အနီးစပ်ဆုံးကိန်းသို့ ပြောင်းတွက်ခြင်းတို့ကြောင့် ရလဒ်ကွာနိုင်ပါသည်။ နှုန်းထားနှင့် အသိပေးချက်များ နောက်ကျခြင်း၊ မရရှိခြင်း သို့မဟုတ် မှားယွင်းခြင်း ဖြစ်နိုင်ပြီး အဟောင်းနှုန်းသည် လက်ရှိနှုန်းအတွက် အာမခံချက်မဟုတ်ပါ။ ငွေပေးချေမီ လက်ရှိနှုန်း၊ လက်ခံသူ၊ ပမာဏ၊ ဝန်ဆောင်ခနှင့် ငွေပေးချေနည်းကို သက်ဆိုင်ရာဝန်ဆောင်မှုပေးသူထံ ပြန်စစ်ပါ။ ထည့်သွင်းသောအချက်အလက်နှင့် ဆောင်ရွက်သောငွေကြေးဆုံးဖြတ်ချက်များကို အသုံးပြုသူက တာဝန်ယူရပါမည်။</p>
+<h2>အကောင့်ဝင်ခြင်းနှင့် လုံခြုံရေး</h2>
+<p>အကောင့်မှတ်တမ်းနှင့် upload ပြီးသောပြေစာများကို ပြန်လည်ရယူသည့် လုပ်ဆောင်ချက်များအတွက် Firebase Authentication မှတစ်ဆင့် Google အကောင့်ဝင်ရန် လိုအပ်ပါသည်။ မိမိ Google အကောင့်နှင့် ဖုန်းကို လုံခြုံစွာ ထိန်းသိမ်းပြီး ခွင့်မပြုထားသူကို ဝင်ခွင့်မပေးပါနှင့်။ မှန်ကန်သောအကောင့်၊ အင်တာနက်နှင့် ဝန်ဆောင်မှုအခြေအနေအပေါ် မူတည်၍ အသုံးပြုနိုင်ပါသည်။ အကောင့်ထွက်ခြင်း သို့မဟုတ် app ဖယ်ရှားခြင်းတစ်ခုတည်းဖြင့် အွန်လိုင်းရှိမှတ်တမ်းများ မဖျက်ပစ်ပါ။</p>
+<h2>မိမိထည့်သွင်းသော မှတ်တမ်း၊ ပြေစာနှင့် ကတ်ပုံများ</h2>
+<p>မိမိအသုံးပြုခွင့်ရှိသော အချက်အလက်များကိုသာ ထည့်သွင်းပါ။ အခြားသူ၏ အမည်၊ အကောင့်အချက်အလက်၊ QR သို့မဟုတ် ပြေစာကို ထည့်မည်ဆိုပါက လိုအပ်သောခွင့်ပြုချက် ရယူပါ။ Password၊ တစ်ကြိမ်သုံးကုဒ်၊ ဘဏ်အကောင့်ဝင်ရန်အချက်အလက်၊ ဥပဒေနှင့်မညီသောအကြောင်းအရာ သို့မဟုတ် အတုအယောင်ငွေပေးချေမှုသက်သေကို မတင်ပါနှင့်။ ဖန်တီးထားသော ဘဏ်ကတ်ပုံသည် အချက်အလက်ပြသရန်သာဖြစ်ပြီး ဘဏ်ထုတ်တရားဝင်စာရွက်စာတမ်း သို့မဟုတ် ငွေပေးချေမှုသက်သေ မဟုတ်ပါ။ မိမိအကြောင်းအရာအပေါ် ပိုင်ဆိုင်ခွင့်ကို ဆက်လက်ပိုင်ဆိုင်ပြီး ရွေးချယ်အသုံးပြုသောလုပ်ဆောင်ချက်အတွက် လိုအပ်သည့်အတိုင်းသာ ကျွန်ုပ်တို့နှင့် မူဝါဒတွင်ဖော်ပြထားသော ပံ့ပိုးသူများက စီမံဆောင်ရွက်ခွင့် ပေးအပ်ပါသည်။</p>
+<h2>ဖုန်းတွင်းဖိုင်၊ upload နှင့် ဖျက်ခြင်း</h2>
+<p>ဖုန်းထဲရှိဖိုင်နှင့် cloud ပေါ်ရှိဖိုင်သည် သီးခြားဖြစ်ပါသည်။ Upload တန်းစီစောင့်ရခြင်း သို့မဟုတ် မအောင်မြင်ခြင်း ဖြစ်နိုင်သောကြောင့် အခြေအနေကို စစ်ပြီး အရေးကြီးမှတ်တမ်းများအတွက် ကိုယ်ပိုင်မိတ္တူ ထားရှိပါ။ Upload အောင်မြင်ပြီး ဝန်ဆောင်မှုနှင့် ဖိုင် ဆက်လက်ရရှိနေသမျှ အကောင့်တူဖြင့် ပြန်ယူနိုင်ပါသည်။ App မှပြေစာဖယ်ခြင်းသည် အခြားနေရာတွင် သိမ်းထား၊ မျှဝေထားသောမိတ္တူများကို မဖယ်ရှားပါ။ Telegram မူရင်း message ဖျက်ခြင်းသည် ၎င်း၏ခွင့်ပြုချက်နှင့် message သက်တမ်းစည်းမျဉ်းများအရ ကန့်သတ်နိုင်ပါသည်။ အသေးစိတ်နှင့် ဖျက်ရန်တောင်းဆိုနည်းကို Privacy Policy တွင် ဖတ်ရှုပါ။</p>
+<h2>ကြော်ငြာနှင့် ပြင်ပဝန်ဆောင်မှုများ</h2>
+<p>App သည် Google AdMob ကြော်ငြာများ ပြသနိုင်ပြီး Privacy Policy တွင် ရှင်းပြထားသည့် လုပ်ဆောင်ချက်များအတွက် Google/Firebase၊ Cloudflare၊ GitHub နှင့် Telegram ကို အသုံးပြုပါသည်။ ၎င်းတို့၏ ကိုယ်ပိုင်စည်းကမ်းချက်နှင့် မူဝါဒများလည်း သက်ဆိုင်ပါသည်။ ဘဏ်အမည်၊ logo သို့မဟုတ် ပြင်ပ link ပါဝင်ခြင်းသည် MWD Zay ကို ထိုဘဏ် သို့မဟုတ် ဝန်ဆောင်မှုပေးသူက ထောက်ခံကြောင်း မဆိုလိုပါ။ ပြင်ပအဖွဲ့က တိုက်ရိုက်ပေးသော ငွေပေးချေမှုနှင့် ဝန်ဆောင်မှုများကို ကျွန်ုပ်တို့က မစီမံပါ။</p>
+<h2>သင့်လျော်စွာ အသုံးပြုရန်</h2>
+<p>လိမ်လည်မှု၊ အယောင်ဆောင်မှု၊ ခွင့်မရှိဘဲဝင်ရောက်မှု၊ အနှောင့်အယှက်ပေးမှု သို့မဟုတ် ဥပဒေမဲ့ကိစ္စများအတွက် မသုံးပါနှင့်။ ဝင်ခွင့်စစ်ဆေးမှုကို ကျော်လွှားခြင်း၊ အသိပေးချက်အလွဲသုံးခြင်း၊ ဝန်ဆောင်မှုနှောင့်ယှက်ခြင်းနှင့် အခြားအကောင့်၏မှတ်တမ်းဝင်ကြည့်ခြင်းကို မပြုလုပ်ပါနှင့်။ အလွဲသုံးစားမှုဖြေရှင်းရန်၊ အသုံးပြုသူကာကွယ်ရန်၊ ဥပဒေလိုက်နာရန် သို့မဟုတ် လုံခြုံရေးထိန်းသိမ်းရန် လိုအပ်ပါက သင့်လျော်သည့် ဝင်ခွင့်ကန့်သတ်မှု ပြုလုပ်နိုင်ပါသည်။</p>
+<h2>ရရှိနိုင်မှုနှင့် တာဝန်ယူမှု</h2>
+<p>အသုံးဝင်သောဝန်ဆောင်မှုကို ထိန်းသိမ်းရန် ကြိုးပမ်းသော်လည်း မပြတ်တောက်ဘဲအသုံးပြုနိုင်မှု၊ တွက်ချက်မှုအမှားမရှိမှု၊ အသိပေးချက်ချက်ချင်းရမှု သို့မဟုတ် ဖိုင်အမြဲတမ်းသိမ်းထားမှုကို အာမမခံပါ။ သက်ဆိုင်ရာဥပဒေက ခွင့်ပြုသည့်အတိုင်း ဝန်ဆောင်မှုကို ရရှိနိုင်သည့်အခြေအနေအတိုင်း ပေးအပ်ပြီး မစစ်ဆေးထားသောနှုန်း၊ အသုံးပြုသူထည့်သွင်းမှုမှားခြင်း၊ ကွန်ရက်ပြတ်တောက်ခြင်းနှင့် ပြင်ပဝန်ဆောင်မှုများကြောင့် ဖြစ်သောဆုံးရှုံးမှုများအတွက် တာဝန်ကန့်သတ်ပါသည်။ ဥပဒေအရ ပယ်ဖျက်မရသော တာဝန်နှင့် စားသုံးသူအခွင့်အရေးများကို ဤစည်းကမ်းချက်များက မဖယ်ရှားပါ။</p>
+<h2>မူဝါဒ၊ ပြင်ဆင်မှုနှင့် ဆက်သွယ်ရန်</h2>
+<p>အချက်အလက်ကိုင်တွယ်ပုံကို Privacy Policy တွင် ရှင်းပြထားပါသည်။ ဝန်ဆောင်မှုပြောင်းလဲပါက ဤစည်းကမ်းချက်များကို ပြင်ဆင်ပြီး ပြင်ဆင်သည့်ရက်နှင့်တကွ ဤနေရာတွင် ထုတ်ပြန်ပါမည်။ ဆက်လက်အသုံးမပြုမီ လက်ရှိမူကို ပြန်ဖတ်ပါ။ စည်းကမ်းချက် သို့မဟုတ် အကောင့်နှင့်ပတ်သက်သော မေးခွန်းများကို အောက်ပါလိပ်စာမှ San Soe ထံ ဆက်သွယ်နိုင်ပါသည်။</p>
+<p><a href="https://mwdzay.netlify.app/#policy">Privacy Policy ဖတ်ရှုရန်</a></p>
+<h2>ဆက်သွယ်ရန်</h2>
+<p><strong>San Soe · MWD Zay</strong><br><a href="mailto:photphot901@gmail.com">photphot901@gmail.com</a><br><a href="https://mwdzay.netlify.app/">mwdzay.netlify.app</a></p>
 
-<p>By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you may not use the App.</p>
+</section>
 
-<h2>Privacy Policy</h2>
-<p>Our Privacy Policy explains how we handle any information you provide when using the App. You can review our Privacy Policy here: <a href="https://mwdzay.netlify.app/#policy" target="_blank">https://mwdzay.netlify.app/#policy</a></p>
+<section data-language="en" lang="en">
+<p class="legal-date"><strong>Last updated — 11 November 2026</strong></p>
+<h2>About these terms</h2>
+<p>MWD Zay is provided and maintained by San Soe for people working with Thai baht (THB) and Myanmar kyat (MMK). These terms apply to the Android app and its related online services. Please read them before using the service. If you do not agree, do not use the app.</p>
+<h2>What MWD Zay provides</h2>
+<p>The app provides currency calculations, published rate history, customer and transaction records, receipt attachments, notifications and bank-card image creation. MWD Zay is a calculation and record-keeping tool. It does not itself hold funds, execute bank transfers, operate a bank or provide investment advice. Recording a transaction in the app does not confirm that a real payment has been completed.</p>
+<h2>Rates, calculations and verification</h2>
+<p>Published rates, custom rates, fees, thresholds and rounding rules can affect a calculation. Rates and notifications may be delayed, unavailable or contain errors; historical rates are not a promise of a current rate. Before making a payment, verify the current rate, recipient, amount, fees and payment instructions with the relevant provider. You remain responsible for the information you enter and the transaction decisions you make.</p>
+<h2>Sign-in and account access</h2>
+<p>Features that synchronize account records and uploaded receipts require Google sign-in through Firebase Authentication. Keep your Google account and device secure, and do not share access with unauthorized people. Access depends on a valid account, an internet connection and service availability. Signing out or uninstalling the app does not by itself delete records already stored online.</p>
+<h2>Your records, receipts and card images</h2>
+<p>Only enter or upload information you are entitled to use. Obtain any permission needed before including another person’s name, account details, QR code or receipt. Do not upload passwords, one-time codes, bank login credentials, unlawful material or deceptive payment evidence. Bank-card images are presentation aids, not official bank-issued documents or proof of payment. You keep your rights to your content and permit us and the service providers described in the Privacy Policy to process it only as needed to operate the requested features.</p>
+<h2>Local copies, uploads and deletion</h2>
+<p>Local files and cloud copies are separate. Uploads can queue or fail, so check the upload status and keep your own copies of important records. A successful upload allows retrieval through the same account while the service and stored file remain available. Removing a receipt from the app does not remove copies you exported or shared elsewhere. Deletion of an underlying Telegram message may be limited by Telegram’s permissions and message-age rules. See the Privacy Policy for details and deletion requests.</p>
+<h2>Advertising and external services</h2>
+<p>The app may display Google AdMob advertisements and uses Google/Firebase, Cloudflare, GitHub and Telegram for the functions described in the Privacy Policy. Those providers operate under their own terms and privacy policies. A bank name, logo or external link does not imply that the bank or provider endorses MWD Zay. We are not responsible for transactions or services supplied directly by third parties.</p>
+<h2>Acceptable use</h2>
+<p>Do not use the service for fraud, impersonation, unauthorized access, harassment or unlawful activity. Do not bypass access controls, misuse notifications, interfere with the service or access another account’s records. We may restrict access reasonably where necessary to address abuse, protect users, comply with law or maintain security.</p>
+<h2>Availability and responsibility</h2>
+<p>We aim to maintain a useful service, but do not guarantee uninterrupted access, error-free calculations, instant notifications or permanent file storage. To the extent permitted by applicable law, the service is provided as available without additional warranties, and we are not responsible for losses caused by unverified rates, incorrect user inputs, network failures or third-party services. Nothing in these terms excludes a liability or consumer right that cannot lawfully be excluded.</p>
+<h2>Privacy, changes and contact</h2>
+<p>Our Privacy Policy explains how information is handled. We may update these terms when the service changes and will post the revised text and update date here. Please review the current version before continued use. Questions about these terms or requests concerning your account can be sent to San Soe at the contact address below.</p>
+<p><a href="https://mwdzay.netlify.app/#policy">Read our Privacy Policy</a></p>
+<h2>Contact</h2>
+<p><strong>San Soe · MWD Zay</strong><br><a href="mailto:photphot901@gmail.com">photphot901@gmail.com</a><br><a href="https://mwdzay.netlify.app/">mwdzay.netlify.app</a></p>
 
-<h2>No Account Required & Data Collection</h2>
-<p>MWD Zay does not require you to create an account to use any features. We do not collect personal data from users. Any usage data collected via analytics is anonymized and cannot be used to identify you.</p>
-
-<h2>Description of Service</h2>
-<p>MWD Zay is a converter tool designed to calculate exchange rates between various currencies. The App provides real-time or near real-time currency conversion based on publicly available rate sources.</p>
-
-<h2>Third-Party Services</h2>
-<p>The App integrates the following third-party services:</p>
-<ul>
-  <li>OneSignal – for delivering push notifications.</li>
-  <li>Google AdMob – for displaying advertisements.</li>
-  <li>Google Firebase Analytics – for anonymous usage analytics.</li>
-</ul>
-<p>Your use of these services is subject to their respective terms and privacy policies. We do not control OneSignal, AdMob, or Firebase Analytics, and we are not responsible for their practices.</p>
-
-<h2>Intellectual Property</h2>
-<p>All intellectual property rights in the App, including its design, features, and content, are owned by us or our licensors. You may not reproduce, modify, distribute, or create derivative works without our express written permission.</p>
-
-<h2>Prohibited Conduct</h2>
-<p>When using the App, you agree not to:</p>
-<ul>
-  <li>Reverse engineer, decompile, or disassemble the App.</li>
-  <li>Use the App for unlawful purposes or in violation of these Terms.</li>
-  <li>Interfere with or disrupt the integrity of the App or its data.</li>
-</ul>
-
-<h2>Disclaimer of Warranties</h2>
-<p>The App is provided on an "AS IS" and "AS AVAILABLE" basis. To the fullest extent permitted by law, we disclaim all warranties, express or implied, including but not limited to merchantability, fitness for a particular purpose, and non-infringement.</p>
-
-<h2>Limitation of Liability</h2>
-<p>To the maximum extent permitted by applicable law, we will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.</p>
-
-<h2>Indemnification</h2>
-<p>You agree to indemnify and hold us harmless from any claims, losses, liabilities, damages, costs, or expenses (including attorneys' fees) arising out of your violation of these Terms or your use of the App.</p>
-
-<h2>Changes to Terms</h2>
-<p>We may modify these Terms at any time. We will notify you of any changes by posting the new Terms on this page or within the App. Your continued use after changes constitutes acceptance.</p>
-
-<h2>Governing Law and Jurisdiction</h2>
-<p>These Terms are governed by and construed in accordance with the laws of Thailand, without regard to its conflict of law principles. Any dispute arising under or relating to these Terms shall be subject to the exclusive jurisdiction of the courts of Thailand.</p>
-
-<h2>Contact Information</h2>
-<p>If you have any questions or concerns about these Terms, please contact us at: <a href="mailto:photphot901@gmail.com">photphot901@gmail.com</a></p>
-<p>Website: <a href="https://mwdzay.netlify.app/">https://mwdzay.netlify.app</a></p>
+</section>
