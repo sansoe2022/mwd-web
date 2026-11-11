@@ -1,38 +1,87 @@
-<p><strong>Last Updated:</strong> May 12, 2025</p>
+<!-- MWD Zay · policy · မြန်မာနှင့် English စာသားကို သက်ဆိုင်ရာ section ထဲတွင် ပြင်နိုင်ပါသည်။ -->
 
-  <h2>Introduction</h2>
-  <p>MWD Zay is developed and maintained by San Kyaw Soe. This Privacy Policy explains how we handle information in relation to your use of the App, which is available for users in Thailand and Myanmar.</p>
-  <p>By using the App, you agree to the practices described in this policy.</p>
+<section data-language="my" lang="my">
+<p class="legal-date"><strong>နောက်ဆုံးပြင်ဆင်သည့်ရက် — ၂၀၂၆ နိုဝင်ဘာ ၁၁</strong></p>
+<h2>အချက်အလက်ကို စီမံသူ</h2>
+<p>MWD Zay ကို San Soe က စီမံပံ့ပိုးထားပါသည်။ ဤမူဝါဒတွင် app၊ download website နှင့် ဆက်စပ်အွန်လိုင်းဝန်ဆောင်မှုများက ကိုင်တွယ်သောအချက်အလက်၊ အသုံးပြုရသည့်ရည်ရွယ်ချက်၊ ပံ့ပိုးစီမံသူများနှင့် မိမိရွေးချယ်နိုင်သည့်အရာများကို ရှင်းပြထားပါသည်။</p>
+<h2>အကောင့်နှင့် ဝင်ရောက်မှုအချက်အလက်</h2>
+<p>Google အကောင့်ဖြင့် ဝင်သောအခါ Google နှင့် Firebase Authentication က အတည်ပြုဝင်ရောက်မှုကို စီမံပါသည်။ MWD Zay သည် အကောင့်ခွဲခြားသတ်မှတ်ချက်နှင့် Google အကောင့်မှ ပေးအပ်သော အမည်၊ အီးမေးလ်၊ ပရိုဖိုင်ပုံကဲ့သို့ အခြေခံအချက်အလက်ကို ရရှိနိုင်ပါသည်။ ယင်းကို အကောင့်ခွဲခြားခြင်း၊ ပရိုဖိုင်ပြသခြင်းနှင့် မိမိမှတ်တမ်းများသို့ ဝင်ခွင့်စစ်ခြင်းအတွက် သုံးပါသည်။ App တွင် ပြသမည့်အမည် ပြင်ပါက Firebase အကောင့်ပရိုဖိုင်တွင် သိမ်းပါသည်။ မိမိ၏ Google password ကို ကျွန်ုပ်တို့ မရရှိပါ။</p>
+<h2>ငွေလွှဲနှင့် ဖောက်သည်မှတ်တမ်းများ</h2>
+<p>မိမိထည့်သွင်းသော အချက်အလက်တွင် ဖောက်သည်အမည်၊ ငွေလွှဲဦးတည်ချက်၊ ပမာဏ၊ နှုန်းထား၊ ကော်မရှင်၊ နေ့ရက်၊ အချိန်နှင့် မှတ်ချက်တို့ ပါနိုင်ပါသည်။ အကောင့်နှင့်ချိတ်ထားသော မှတ်တမ်းများကို မိမိအကောင့်အတွက် သိမ်းဆည်း၍ ပြန်ယူနိုင်ရန် အွန်လိုင်းငွေလွှဲမှတ်တမ်းဝန်ဆောင်မှုသို့ ပို့ပါသည်။ ထိုအကြောင်းအရာများတွင် မိမိ သို့မဟုတ် အခြားသူကို ခွဲခြားသိနိုင်သည့်အချက်အလက် ပါနိုင်သဖြင့် လိုအပ်ပြီး အသုံးပြုခွင့်ရှိသည့်အရာများကိုသာ ထည့်ပါ။</p>
+<h2>ပြေစာပုံနှင့် Cloud သိမ်းဆည်းမှု</h2>
+<p>မိမိရွေးထားသောပုံကို ဖုန်းတွင် သိမ်းပါသည်။ Cloud upload အသုံးပြုပါက ပုံအရွယ်ချုံ့ထားသောမိတ္တူနှင့် မိမိမှတ်တမ်းတွင် တွဲဖက်ရန်လိုအပ်သည့် အကောင့်၊ ငွေလွှဲနှင့် ဖိုင်အချက်အလက်တို့ကို Cloudflare နှင့် Telegram အသုံးပြုသော ကျွန်ုပ်တို့၏ အွန်လိုင်းဝန်ဆောင်မှုက စီမံသိမ်းဆည်းပါသည်။ ထို့ကြောင့် အကောင့်တူဝင်ထားသော အခြားဖုန်းမှ upload ပြေစာကို ပြန်ယူနိုင်ပါသည်။ ပြေစာတွင် အမည်၊ အကောင့်၊ QR နှင့် ငွေပေးချေမှုအချက်အလက် ပါနိုင်သဖြင့် အသုံးပြုခွင့်ရှိသည့်အရာကိုသာ တင်ပြီး လျှို့ဝှက်အချက်အလက်နှင့် မလိုအပ်သောကိုယ်ရေးအချက်အလက်ကို မထည့်ပါနှင့်။</p>
+<h2>Upload ပြီးသောပြေစာကို ကြည့်ရှုနိုင်သူ</h2>
+<p>Upload ပြေစာများကို အများကြည့်ရန် ရည်ရွယ်မထားပါ။ App မှ ကြည့်ရှုခွင့်ကို သက်ဆိုင်ရာအကောင့်အတွက်သာ ကန့်သတ်ထားပါသည်။ သိမ်းဆည်းပေးသောဝန်ဆောင်မှုများနှင့် ခွင့်ပြုထားသော စီမံသူများသည် ဝန်ဆောင်မှုလုပ်ဆောင်ရာတွင် ဖိုင်ကို စီမံ၊ ကြည့်ရှုနိုင်ပါသည်။ Telegram cloud storage သည် end-to-end encryption ဖြင့် သိမ်းဆည်းခြင်းမဟုတ်ပါ။ ဖိုင်မိတ္တူရရှိထားပြီးသူက ကိုယ်တိုင်သိမ်းခြင်း၊ မျှဝေခြင်းကို app ၏ ဝင်ခွင့်ထိန်းချုပ်မှုဖြင့် ပြန်ရုပ်သိမ်း၍ မရပါ။</p>
+<h2>အသိပေးချက်များ</h2>
+<p>ငွေလဲနှုန်းအသိပေးချက်များအတွက် Firebase Cloud Messaging (FCM) ကို သုံးပါသည်။ Message ပို့ရန် Google က app installation registration token နှင့် သက်ဆိုင်ရာနည်းပညာအချက်အလက်များကို စီမံပါသည်။ အသိပေးချက်ဖွင့်ထားလျှင် app က rates topic ကို subscribe လုပ်ပြီး ပိတ်ထားလျှင် unsubscribe တောင်းဆိုပါသည်။ App နှင့် Android settings မှ အသိပေးချက်ကို ထိန်းချုပ်နိုင်ပါသည်။ Message ရောက်ချိန်သည် ဖုန်းဆက်တင်၊ အင်တာနက်နှင့် messaging ဝန်ဆောင်မှုအပေါ် မူတည်ပါသည်။</p>
+<h2>ကြော်ငြာများ</h2>
+<p>ကြော်ငြာပြသရန် Google AdMob ကို သုံးပါသည်။ Google နှင့် ၎င်း၏ကြော်ငြာမိတ်ဖက်များက မူဝါဒနှင့် သက်ဆိုင်ရာဆက်တင်အရ ကြော်ငြာ သို့မဟုတ် စက်သတ်မှတ်ချက်၊ IP လိပ်စာ၊ စက်နှင့် app အချက်အလက်၊ ကြော်ငြာနှင့်တုံ့ပြန်မှု၊ နည်းပညာအခြေအနေအချက်အလက်များကို စီမံနိုင်ပါသည်။ ဖောက်သည်မှတ်တမ်းနှင့် ပြေစာပုံများကို ကြော်ငြာအတွက် ပို့ပေးသည့်အကြောင်းအရာအဖြစ် မသုံးပါ။ Google နှင့် Android settings တွင် ကြော်ငြာစိတ်ကြိုက်ပြသမှုနှင့် advertising identifier ဆက်တင်များကို ထိန်းချုပ်နိုင်ပါသည်။</p>
+<h2>ဖုန်းတွင်းဆက်တင်၊ နှုန်းထားနှင့် ကတ်ပုံများ</h2>
+<p>App သည် ဆက်တင်၊ ကိုယ်ပိုင်နှုန်း၊ ဖုန်းတွင်းနှုန်းမှတ်တမ်း၊ ယာယီသိမ်းထားသောမှတ်တမ်းနှင့် ပုံများကို မိမိဖုန်းတွင် သိမ်းပါသည်။ အများသုံးထုတ်ပြန်နှုန်းမှတ်တမ်းကို Cloudflare D1 history service မှ ရယူပြီး ထိုမှတ်တမ်းကြည့်ရန် အကောင့်ဝင်စရာမလိုပါ။ ကိုယ်ပိုင်နှုန်းမှတ်တမ်းသည် မိမိဖုန်းတွင်သာ ရှိပါသည်။ ဘဏ်ကတ်အတွက် ထည့်သွင်းသောအချက်အလက်နှင့် ရွေးထားသောပုံကို ဖုန်းတွင် ကတ်ပုံဖန်တီးရန် သုံးပြီး သိမ်းခြင်း သို့မဟုတ် မျှဝေခြင်းပြုလျှင် မိမိရွေးသည့်နေရာသို့ မိတ္တူရောက်ပါသည်။ ဤ download website သည် ဘာသာစကားရွေးချယ်မှုကို မှတ်ထားရန် browser local storage ကို သုံးပါသည်။</p>
+<h2>နည်းပညာအချက်အလက်နှင့် ပံ့ပိုးသူများ</h2>
+<p>ကွန်ရက်တောင်းဆိုမှုကို ကိုင်တွယ်သောဝန်ဆောင်မှုပေးသူသည် IP လိပ်စာ၊ တောင်းဆိုချိန်နှင့် ရယူလိုသည့်အရာကဲ့သို့ နည်းပညာအချက်အလက်ကို ရရှိနိုင်ပါသည်။ ပံ့ပိုးသူများသည် ၎င်းတို့မူဝါဒအရ လုပ်ငန်းလည်ပတ်ရေးနှင့် လုံခြုံရေး log များ သိမ်းထားနိုင်ပါသည်။ အောက်တွင် ဖော်ပြထားသောဝန်ဆောင်မှုများကို သတ်မှတ်ရည်ရွယ်ချက်အတွက် သုံးပါသည်။ အများသုံးနှုန်းနှင့် configuration ကို GitHub မှ ပံ့ပိုးပြီး အွန်လိုင်း app API နှင့် history အတွက် Cloudflare ကို သုံးပါသည်။</p>
+<ul><li><strong>Google Sign-In / Firebase Authentication</strong> — အကောင့်ဝင်ခြင်းနှင့် အတည်ပြုခြင်း။ <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">ပံ့ပိုးသူ၏ Privacy Policy</a></li>
+<li><strong>Firebase Cloud Messaging (FCM)</strong> — နှုန်းထားအသိပေးချက် ပို့ခြင်း။ <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">ပံ့ပိုးသူ၏ Privacy Policy</a></li>
+<li><strong>Google AdMob</strong> — ကြော်ငြာပြသခြင်းနှင့် သက်ဆိုင်ရာတိုင်းတာမှု။ <a href="https://policies.google.com/privacy" rel="noopener noreferrer">ပံ့ပိုးသူ၏ Privacy Policy</a></li>
+<li><strong>Cloudflare</strong> — အွန်လိုင်းဝန်ဆောင်မှု၊ နှုန်းမှတ်တမ်းနှင့် ပြေစာစီမံခြင်း။ <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">ပံ့ပိုးသူ၏ Privacy Policy</a></li>
+<li><strong>Telegram</strong> — Upload ပြေစာဖိုင် သိမ်းဆည်းခြင်းနှင့် ပြန်ယူခြင်း။ <a href="https://telegram.org/privacy" rel="noopener noreferrer">ပံ့ပိုးသူ၏ Privacy Policy</a></li>
+<li><strong>GitHub</strong> — အများသုံးနှုန်းနှင့် app configuration ပံ့ပိုးခြင်း။ <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">ပံ့ပိုးသူ၏ Privacy Policy</a></li>
+</ul><h2>အသုံးပြုခြင်းနှင့် မျှဝေစီမံခြင်း၏ ရည်ရွယ်ချက်</h2>
+<p>အချက်အလက်ကို အကောင့်အတည်ပြုရန်၊ တောင်းဆိုထားသောမှတ်တမ်းကို သိမ်းယူရန်၊ အသိပေးချက်ပို့ရန်၊ ကြော်ငြာပြသရန်၊ ဝန်ဆောင်မှုထိန်းသိမ်းရန်နှင့် အလွဲသုံးမှုတားဆီးရန် သုံးပါသည်။ ယင်းလုပ်ဆောင်ချက်အတွက် လိုအပ်သောပံ့ပိုးသူများထံ ပို့အပ်စီမံပြီး ဥပဒေအရလိုအပ်သည့်အခါ သို့မဟုတ် တရားဝင်အခွင့်အရေးနှင့် လုံခြုံရေးကာကွယ်ရန် လိုအပ်သည့်အခါ ထုတ်ဖော်နိုင်ပါသည်။ ပုံ export သို့မဟုတ် app ပြင်ပသို့ အချက်အလက်မျှဝေခြင်းကို မိမိက ထပ်မံရွေးချယ်ဆောင်ရွက်ပါသည်။</p>
+<h2>သိမ်းဆည်းထားမှုနှင့် ဖျက်ခြင်း</h2>
+<p>ဖုန်းတွင်းဒေတာသည် မိမိဖယ်ရှားခြင်း၊ app data ရှင်းခြင်း သို့မဟုတ် app ဖယ်ရှားခြင်း မပြုမီအထိ ဖုန်း၏သိမ်းဆည်းစနစ်အရ ဆက်ရှိနိုင်ပါသည်။ အကောင့်မှတ်တမ်းနှင့် ပြေစာ metadata ကို ပြန်ယူနိုင်ရန် အွန်လိုင်းတွင် ထားရှိပြီး ဖျက်ခြင်း သို့မဟုတ် ဝန်ဆောင်မှုအတွက် မလိုအပ်တော့သည့်အချိန်အထိ သိမ်းဆည်းပါသည်။ ယာယီတင်ထားသောပြေစာဖိုင်ကို လုပ်ဆောင်မှုအောင်မြင်ပြီးနောက် ဖယ်ရှားပြီး မအောင်မြင်၊ တန်းစီနေသည့်ဖိုင်များသည် cleanup မပြုမီ ဆက်ကျန်နိုင်ပါသည်။ ပံ့ပိုးသူ log နှင့် ကျွန်ုပ်တို့ထိန်းချုပ်မှုအပြင်ရှိ မိတ္တူများသည် ၎င်းတို့၏သိမ်းဆည်းမှုစည်းမျဉ်းအတိုင်း ဖြစ်ပါသည်။</p>
+<h2>မိမိရွေးချယ်ခွင့်နှင့် ဖျက်ရန်တောင်းဆိုခြင်း</h2>
+<p>App တွင် ရနိုင်သည့်လုပ်ဆောင်ချက်အတိုင်း ပရိုဖိုင်ပြင်ခြင်း၊ ငွေလွှဲမှတ်တမ်း သို့မဟုတ် ပြေစာဖယ်ခြင်း၊ အသိပေးချက်ထိန်းချုပ်ခြင်းနှင့် တွဲထည့်၊ export လုပ်မည့်ပုံရွေးခြင်းကို ဆောင်ရွက်နိုင်ပါသည်။ ပြေစာဖယ်လိုက်လျှင် app ၏ receipt service မှ ဝင်ကြည့်ခွင့်ကို ဖယ်ရှားသော်လည်း Telegram မူရင်း message ဖျက်မှုမှာ ၎င်း၏ခွင့်ပြုချက်နှင့် message သက်တမ်းအရ ကန့်သတ်နိုင်ပါသည်။ Gallery ထုတ်ထားသောပုံ၊ အခြားသူ၏မိတ္တူနှင့် ပံ့ပိုးသူသိမ်းထားသော log တို့ကို ထိုလုပ်ဆောင်ချက်က မဖျက်ပါ။ ဖုန်းတွင်းဒေတာရှင်းခြင်း သို့မဟုတ် အကောင့်ထွက်ခြင်းသည် cloud မှတ်တမ်းကို မဖျက်ပါ။ အချက်အလက်ရယူရန်၊ ပြင်ရန်၊ အကောင့်ဖျက်ရန် သို့မဟုတ် ကျန်ရှိသောအကောင့်ဒေတာဖျက်ရန် အောက်ပါအီးမေးလ်မှ San Soe ထံ အကောင့်နှင့် တောင်းဆိုချက်ကို ဖော်ပြဆက်သွယ်ပါ။ လိုအပ်သလောက် အကောင့်ပိုင်ဆိုင်မှုအတည်ပြုချက် တောင်းနိုင်ပါသည်။ Password နှင့် တစ်ကြိမ်သုံးကုဒ်ကို မပို့ပါနှင့်။ ဥပဒေအရ ထိန်းသိမ်းရန်လိုသောမှတ်တမ်းအပါအဝင် ကန့်သတ်ချက်ရှိပါက တုံ့ပြန်ရာတွင် ရှင်းပြပါမည်။</p>
+<h2>လုံခြုံရေးနှင့် နိုင်ငံတကာတွင် စီမံမှု</h2>
+<p>App သည် HTTPS နှင့် အကောင့်အတည်ပြုထားသော endpoint များကို ကာကွယ်ထားသည့်မှတ်တမ်းနှင့် ပြေစာများအတွက် သုံးပါသည်။ အင်တာနက်ဝန်ဆောင်မှု သို့မဟုတ် သိမ်းဆည်းနည်းတစ်ခုမျှ လုံးဝလုံခြုံသည်ဟု အာမမခံနိုင်ပါ။ ဖုန်းနှင့်အကောင့်ကို ကာကွယ်ပြီး အရေးကြီးအချက်အလက်အတွက် သီးခြားမိတ္တူထားပါ။ Google၊ Cloudflare၊ GitHub နှင့် Telegram သည် ၎င်းတို့မူဝါဒနှင့် သက်ဆိုင်ရာဥပဒေကာကွယ်မှုအရ မိမိနိုင်ငံပြင်ပရှိစနစ်များတွင် အချက်အလက်စီမံနိုင်ပါသည်။</p>
+<h2>ကလေးသူငယ်များ၏ ကိုယ်ရေးလုံခြုံမှု</h2>
+<p>ဤဝန်ဆောင်မှုသည် အသက် ၁၃ နှစ်အောက် ကလေးများအတွက် ရည်ရွယ်ထားခြင်းမဟုတ်ပါ။ ကလေးတစ်ဦး၏ ကိုယ်ရေးအချက်အလက် ပေးပို့ထားသည်ဟု ယူဆပါက စစ်ဆေး၍ သင့်လျော်သလို ဆောင်ရွက်နိုင်ရန် ကျွန်ုပ်တို့ထံ ဆက်သွယ်ပါ။ သက်ဆိုင်ရာဥပဒေက ပိုမိုတင်းကျပ်သည့် အသက် သို့မဟုတ် မိဘခွင့်ပြုချက် သတ်မှတ်ထားပါက ယင်းလိုအပ်ချက်လည်း သက်ဆိုင်ပါသည်။</p>
+<h2>မူဝါဒပြင်ဆင်မှုနှင့် ဆက်သွယ်ရန်</h2>
+<p>App လုပ်ဆောင်ချက်၊ ပံ့ပိုးသူ သို့မဟုတ် ဥပဒေလိုအပ်ချက် ပြောင်းလဲပါက ဤမူဝါဒကို ပြင်ဆင်နိုင်ပါသည်။ နောက်ဆုံးစာသားနှင့် ပြင်ဆင်သည့်ရက်ကို ဤစာမျက်နှာတွင် ဖော်ပြပါမည်။ ကိုယ်ရေးလုံခြုံမှုမေးခွန်းနှင့် ဒေတာတောင်းဆိုမှုများကို အောက်ပါလိပ်စာမှ San Soe ထံ ဆက်သွယ်ပါ။</p>
+<h2>ဆက်သွယ်ရန်</h2>
+<p><strong>San Soe · MWD Zay</strong><br><a href="mailto:photphot901@gmail.com">photphot901@gmail.com</a><br><a href="https://mwdzay.netlify.app/">mwdzay.netlify.app</a></p>
 
-  <h2>No Personal Data Collection</h2>
-  <p>We do not collect, store, or share any personally identifiable information. You do not need to create an account or log in to use MWD Zay. All features are accessible without user registration.</p>
+</section>
 
-  <h2>Automatically Collected Information</h2>
-  <p>Although we do not collect personal data directly, the App uses third-party services that may collect anonymized information for analytics and advertising purposes. These services include:</p>
-  <ul>
-    <li>Google Firebase Analytics</li>
-    <li>Google AdMob</li>
-    <li>OneSignal (for push notifications)</li>
-  </ul>
-  <p>These services may collect non-personally identifiable data such as device type, usage frequency, app crashes, and interaction with ads. This data helps us improve the functionality and user experience of the App.</p>
+<section data-language="en" lang="en">
+<p class="legal-date"><strong>Last updated — 11 November 2026</strong></p>
+<h2>Who is responsible</h2>
+<p>MWD Zay is provided and maintained by San Soe. This policy explains the information handled by the app, its download website and related online services, why it is used, who helps process it and the choices available to you.</p>
+<h2>Account and sign-in information</h2>
+<p>When you choose Google sign-in, Google and Firebase Authentication process your authentication credentials. MWD Zay receives an account identifier and basic profile information made available by your account, such as your name, email address and profile image where provided. These identify your account, show your profile and authorize access to your records. If you edit your display name in the app, it is saved to your Firebase account profile. We do not receive your Google password.</p>
+<h2>Transactions and customer records</h2>
+<p>Information you enter can include customer names, transfer direction, amounts, exchange rates, commission, dates, times and notes. Account-linked records are sent to the online transaction service to save and retrieve them for your account. Their contents may identify you or another person. Only include information necessary for your records and that you are permitted to use.</p>
+<h2>Receipt images and cloud storage</h2>
+<p>Images you select are saved on your device. If you use cloud upload, a compressed copy and the account, transaction and file information needed to link it to your record are processed by our online service using Cloudflare and Telegram. This allows uploaded receipts to be retrieved on another phone signed in to the same account. Receipt images may contain names, account details, QR codes and payment information. Only upload information you are permitted to use, and do not include secrets or unnecessary personal information.</p>
+<h2>Access to uploaded receipts</h2>
+<p>Uploaded receipts are not intended to be public. Access through the app is restricted to the associated account. The storage providers and authorized service administrators may process or access the files when operating the service. Telegram cloud storage is not end-to-end encrypted. A person who already has a copy can save or share it independently; app access controls do not recall those copies.</p>
+<h2>Notifications</h2>
+<p>Firebase Cloud Messaging (FCM) provides rate notifications. Google processes an app-installation registration token and related technical information to deliver messages. The app subscribes to the rates topic when notifications are enabled and requests unsubscription when they are disabled. You can control notifications in the app and Android settings. Message arrival depends on device settings, connectivity and the messaging provider.</p>
+<h2>Advertisements</h2>
+<p>Google AdMob is used to display advertisements. Google and its advertising partners may process advertising or device identifiers, IP addresses, device and app information, ad interactions and diagnostic information under their policies and applicable settings. We do not send your customer records or receipt images as advertising payloads. Ad personalization and advertising-identifier controls may be available through Google and Android settings.</p>
+<h2>Local preferences, rates and card images</h2>
+<p>The app stores preferences, custom rates, local history, cached records and images on your device. Published official rate history is shared data retrieved from the Cloudflare D1 history service; a public rate-history request does not require sign-in. Custom rate history stays on your device. Bank-card details and images you choose are used to create the card locally; saving or sharing the resulting image places a copy in the destination you choose. This download website uses local storage to remember your language preference.</p>
+<h2>Technical information and service providers</h2>
+<p>Network requests expose technical information such as IP address, request time and requested resources to the provider handling the request. Service providers may retain operational and security logs under their policies. We use the following services for the purposes listed below; public rates and configuration are hosted through GitHub, and online application APIs and history use Cloudflare.</p>
+<ul><li><strong>Google Sign-In / Firebase Authentication</strong> — Account sign-in and identity verification. <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Provider privacy policy</a></li>
+<li><strong>Firebase Cloud Messaging (FCM)</strong> — Rate notification delivery. <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Provider privacy policy</a></li>
+<li><strong>Google AdMob</strong> — Advertising and related measurement. <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Provider privacy policy</a></li>
+<li><strong>Cloudflare</strong> — Online services, rate history and receipt processing. <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">Provider privacy policy</a></li>
+<li><strong>Telegram</strong> — Storage and retrieval of uploaded receipt files. <a href="https://telegram.org/privacy" rel="noopener noreferrer">Provider privacy policy</a></li>
+<li><strong>GitHub</strong> — Hosting public rates and app configuration. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">Provider privacy policy</a></li>
+</ul><h2>Why information is used and disclosed</h2>
+<p>Information is used to authenticate accounts, save and retrieve requested records, deliver notifications, show advertisements, maintain the service and protect it against misuse. It is disclosed to the providers needed for those functions and may be disclosed where legally required or necessary to protect lawful rights and security. You control additional disclosure when you export images or share information outside the app.</p>
+<h2>Retention and deleting information</h2>
+<p>Local data remains until you remove it, clear app data or uninstall the app, subject to your device’s storage behavior. Account records and receipt metadata remain online to support retrieval until deleted or otherwise no longer needed for the service. Temporary staged receipt files are removed after successful processing; failed or queued files may remain pending cleanup. Provider logs and copies outside our control follow the provider’s retention rules.</p>
+<h2>Your choices and deletion requests</h2>
+<p>You can edit supported profile details, remove transactions or receipts using the available app controls, manage notifications, and choose which images to attach or export. Removing a receipt revokes its access through the app’s receipt service; deletion of the original Telegram message can be restricted by Telegram’s permissions and message-age limits. Gallery exports, other people’s copies and provider-retained logs are not removed by that action. Clearing local data or signing out does not delete cloud records. To request access, correction, account deletion or deletion of remaining account-linked data, contact San Soe at the email below and identify the account and request. We may ask for proportionate proof of ownership. Do not send passwords or one-time codes. We will explain any limits, including records that must be retained by law, when responding.</p>
+<h2>Security and international processing</h2>
+<p>The app uses HTTPS and account-authenticated endpoints for protected records and receipts. No internet service or storage method is completely secure. Use a protected device and account, and keep independent copies of essential information. Google, Cloudflare, GitHub and Telegram may process information on infrastructure outside your country under their respective policies and applicable legal safeguards.</p>
+<h2>Children’s privacy</h2>
+<p>The service is not directed to children under 13. If you believe a child has supplied personal information through the service, contact us so we can review the situation and take appropriate action. Any stricter age or parental-consent requirement under applicable law also applies.</p>
+<h2>Policy updates and contact</h2>
+<p>We may revise this policy as app features, providers or legal requirements change. The latest text and update date will be shown on this page. Privacy questions and data requests should be addressed to San Soe using the contact details below.</p>
+<h2>Contact</h2>
+<p><strong>San Soe · MWD Zay</strong><br><a href="mailto:photphot901@gmail.com">photphot901@gmail.com</a><br><a href="https://mwdzay.netlify.app/">mwdzay.netlify.app</a></p>
 
-  <h2>Third-Party Services</h2>
-  <p>Each third-party service integrated into the App has its own privacy policy. We encourage you to review their policies:</p>
-  <ul>
-    <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase Privacy Policy</a></li>
-    <li><a href="https://policies.google.com/privacy" target="_blank">Google AdMob Privacy Policy</a></li>
-    <li><a href="https://onesignal.com/privacy_policy" target="_blank">OneSignal Privacy Policy</a></li>
-  </ul>
-
-  <h2>Children’s Privacy</h2>
-  <p>MWD Zay is not directed to children under the age of 13. We do not knowingly collect any data from children. If you believe a child has provided us with personal data, please contact us and we will delete it.</p>
-
-  <h2>Data Security</h2>
-  <p>We are committed to protecting the integrity and confidentiality of any information managed by our App. While we do not store user data, we ensure that our app and integrated services follow industry best practices to secure communications and analytics.</p>
-
-  <h2>Changes to This Privacy Policy</h2>
-  <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page. Continued use of the App after changes means you accept the updated policy.</p>
-
-  <h2>Contact Us</h2>
-  <p>If you have any questions about this Privacy Policy, feel free to contact us at: <a href="mailto:photphot901@gmail.com">photphot901@gmail.com</a></p>
-<p>Website: <a href="https://mwdzay.netlify.app/">https://mwdzay.netlify.app</a></p>
+</section>
